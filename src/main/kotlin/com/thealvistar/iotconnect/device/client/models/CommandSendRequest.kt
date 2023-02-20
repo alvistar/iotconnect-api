@@ -10,17 +10,15 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
+ * *
  * @param commandGuid Template command Guid
  * @param parameterValue Command Value
  * @param applyTo Send 1 or 2. 1: for entity, 2: for device guid list
@@ -32,8 +30,7 @@ import com.fasterxml.jackson.annotation.JsonProperty
  * @param scheduleUnitValue <i>scheduleUnitValue</i> is mandatory when <i>isScheduledCommand</i> is true. This requires value as per the selected <i>scheduleUnit</i>.              When scheduleUnit is <i>hour</i>, set hours between 1 to 24. eg: 5(after every 5 hours command will be sent)              When scheduleUnit is <i>minute</i>, set minutes between 5 to 60. eg: 30(after every 30 minutes command will be sent)              When scheduleUnit is <i>time</i>, set time in HH:mm format. eg: 13:30(every day at 01:30 PM command will be sent)
  */
 
-
-data class CommandSendRequest (
+data class CommandSendRequest(
 
     /* Template command Guid */
     @field:JsonProperty("commandGuid")
@@ -69,7 +66,6 @@ data class CommandSendRequest (
 
     /* <i>scheduleUnitValue</i> is mandatory when <i>isScheduledCommand</i> is true. This requires value as per the selected <i>scheduleUnit</i>.              When scheduleUnit is <i>hour</i>, set hours between 1 to 24. eg: 5(after every 5 hours command will be sent)              When scheduleUnit is <i>minute</i>, set minutes between 5 to 60. eg: 30(after every 30 minutes command will be sent)              When scheduleUnit is <i>time</i>, set time in HH:mm format. eg: 13:30(every day at 01:30 PM command will be sent) */
     @field:JsonProperty("scheduleUnitValue")
-    val scheduleUnitValue: kotlin.String? = null
+    val scheduleUnitValue: kotlin.String? = null,
 
 )
-

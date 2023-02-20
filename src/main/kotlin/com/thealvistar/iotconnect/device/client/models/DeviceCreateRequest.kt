@@ -10,18 +10,15 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-import com.thealvistar.iotconnect.device.client.models.PropertyValue
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
+ * *
  * @param uniqueId The uniqueId of device.  <b>Notes:</b> Device uniqueId length is conditional based on device template auth type and device type   1. Self or CA signed parent device uniqueId length should be less than or equal to 31 characters.   2. Self or CA signed child device uniqueId length should be less than or equal to 31 characters.   3. For TPM or key, all device uniqueId length should be less than or equal to 128 characters.
  * @param deviceTemplateGuid The deviceTemplateGuid of device.
  * @param displayName The display name of device.
@@ -33,18 +30,15 @@ import com.fasterxml.jackson.annotation.JsonProperty
  * @param secondaryThumbprint The secondaryThumbprint of self signed device.
  * @param endorsementKey The endorsementKey of TPM device. This field is required if device template authentication type is TPM.
  * @param properties The custom properties of device.
- * @param xmlProperties 
- * @param deviceCertificateGuid The certificateGuid of devicetemplate.
+ * @param xmlProperties * @param deviceCertificateGuid The certificateGuid of devicetemplate.
  * @param deviceCertificate Byte array of device certificate file(Only .pfx file allowed).
  * @param deviceCertificatePassword Password of device certificate
  * @param primaryKey The primaryKey of symmetric key device. This field is required if device template authentication type is symmetric key.
  * @param secondaryKey The secondaryKey of symmetric key device. This field is required if device template authentication type is symmetric key.
- * @param certificateText 
- * @param note The note of the device.
+ * @param certificateText * @param note The note of the device.
  */
 
-
-data class DeviceCreateRequest (
+data class DeviceCreateRequest(
 
     /* The uniqueId of device.  <b>Notes:</b> Device uniqueId length is conditional based on device template auth type and device type   1. Self or CA signed parent device uniqueId length should be less than or equal to 31 characters.   2. Self or CA signed child device uniqueId length should be less than or equal to 31 characters.   3. For TPM or key, all device uniqueId length should be less than or equal to 128 characters. */
     @field:JsonProperty("uniqueId")
@@ -118,7 +112,6 @@ data class DeviceCreateRequest (
 
     /* The note of the device. */
     @field:JsonProperty("note")
-    val note: kotlin.String? = null
+    val note: kotlin.String? = null,
 
 )
-

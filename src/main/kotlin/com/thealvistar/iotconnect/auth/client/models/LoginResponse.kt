@@ -10,17 +10,15 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.auth.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
+ * *
  * @param tokenType Token type eg. \"Bearer\"
  * @param accessToken Access token, used to communicate with IOTConnect APIs
  * @param expiresIn Access token expiry duration in seconds, eg. 1000
@@ -28,8 +26,7 @@ import com.fasterxml.jackson.annotation.JsonProperty
  * @param status Status code of request, eg.200
  */
 
-
-data class LoginResponse (
+data class LoginResponse(
 
     /* Token type eg. \"Bearer\" */
     @field:JsonProperty("token_type")
@@ -49,7 +46,6 @@ data class LoginResponse (
 
     /* Status code of request, eg.200 */
     @field:JsonProperty("status")
-    val status: Int = 0
+    val status: Int = 0,
 
 )
-

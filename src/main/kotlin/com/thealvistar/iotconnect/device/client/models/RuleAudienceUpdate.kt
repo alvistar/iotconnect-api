@@ -10,17 +10,15 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
+ * *
  * @param interval Interval duration value after rule matched.  Note : internal duration will consider based on intervalUnit
  * @param intervalUnit Interval unit for interval  1 : Minute,  2 : Hour,  3 : Day   Note : Default value is Minute
  * @param roleGuids Role guid list. Notification will be sent to all users of this role if <i>userGuids</i> not exists.
@@ -28,8 +26,7 @@ import com.fasterxml.jackson.annotation.JsonProperty
  * @param userGuids User guid list which are associated with <i>roleGuids</i>. Notification will be sent to all users in the list.
  */
 
-
-data class RuleAudienceUpdate (
+data class RuleAudienceUpdate(
 
     /* Interval duration value after rule matched.  Note : internal duration will consider based on intervalUnit */
     @field:JsonProperty("interval")
@@ -49,7 +46,6 @@ data class RuleAudienceUpdate (
 
     /* User guid list which are associated with <i>roleGuids</i>. Notification will be sent to all users in the list. */
     @field:JsonProperty("userGuids")
-    val userGuids: kotlin.collections.List<kotlin.String>? = null
+    val userGuids: kotlin.collections.List<kotlin.String>? = null,
 
 )
-

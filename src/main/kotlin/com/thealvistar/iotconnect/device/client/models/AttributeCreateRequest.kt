@@ -10,18 +10,15 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-import com.thealvistar.iotconnect.device.client.models.AttributeBaseObject
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
+ * *
  * @param localName Template attribute name.   It should be alphanumeric and allows two consecutive '_' and must start with the alphabet.   Eg. Temperature, Humadity, oxygenIn1, Temperature_In, Temperature__Out, Oxygen_In__1  etc.
  * @param deviceTemplateGuid Associated Device Template Guid
  * @param dataTypeGuid Attribute's Datatype Guid
@@ -32,14 +29,11 @@ import com.fasterxml.jackson.annotation.JsonProperty
  * @param aggregateType Attribute's aggregate type   Aggregate Types : Min, Max, Average, Sum, Latest Value.
  * @param tumblingWindow Attribute's tumbling window   Tumbling window should be 1 to 999 ending with h/m/s.<div> For example: </div><div>  5h (h = hour) </div><div> 5m (m = minute) </div><div> 5s (s = second)</div>   The tumbling window is required if the associated device template has enabled edge support.
  * @param attributes Child attributes list, This field is required if selected dataTypeGuid for the object.
- * @param xmlAttributes 
- * @param startIndex Start index is required if the associated device template has enabled low bandwidth support and data type is not an object.
+ * @param xmlAttributes * @param startIndex Start index is required if the associated device template has enabled low bandwidth support and data type is not an object.
  * @param numChar Range is required if the associated device template has enabled low bandwidth support and data type is not an objet.
- * @param attributeColor 
- */
+ * @param attributeColor */
 
-
-data class AttributeCreateRequest (
+data class AttributeCreateRequest(
 
     /* Template attribute name.   It should be alphanumeric and allows two consecutive '_' and must start with the alphabet.   Eg. Temperature, Humadity, oxygenIn1, Temperature_In, Temperature__Out, Oxygen_In__1  etc. */
     @field:JsonProperty("localName")
@@ -93,7 +87,6 @@ data class AttributeCreateRequest (
     val numChar: kotlin.Int? = null,
 
     @field:JsonProperty("attributeColor")
-    val attributeColor: kotlin.String? = null
+    val attributeColor: kotlin.String? = null,
 
 )
-

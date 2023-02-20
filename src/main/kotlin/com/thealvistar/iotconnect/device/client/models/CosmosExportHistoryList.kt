@@ -10,32 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param guid 
- * @param companyGuid 
- * @param exportType 
- * @param startDate 
- * @param endDate 
- * @param ruUsed 
- * @param charges 
- * @param status 
- * @param userId 
- * @param createdDate 
- * @param requestData 
- */
+ * *
+ * @param guid * @param companyGuid * @param exportType * @param startDate * @param endDate * @param ruUsed * @param charges * @param status * @param userId * @param createdDate * @param requestData */
 
-
-data class CosmosExportHistoryList (
+data class CosmosExportHistoryList(
 
     @field:JsonProperty("guid")
     val guid: kotlin.String? = null,
@@ -68,7 +54,6 @@ data class CosmosExportHistoryList (
     val createdDate: java.time.OffsetDateTime? = null,
 
     @field:JsonProperty("requestData")
-    val requestData: kotlin.String? = null
+    val requestData: kotlin.String? = null,
 
 )
-

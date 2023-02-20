@@ -10,23 +10,20 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
+ * *
  * @param name Device template name
  * @param firmwareguid Firmware hardware version guid
  */
 
-
-data class TemplateUpdateRequest (
+data class TemplateUpdateRequest(
 
     /* Device template name */
     @field:JsonProperty("name")
@@ -34,7 +31,6 @@ data class TemplateUpdateRequest (
 
     /* Firmware hardware version guid */
     @field:JsonProperty("firmwareguid")
-    val firmwareguid: kotlin.String? = null
+    val firmwareguid: kotlin.String? = null,
 
 )
-

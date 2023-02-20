@@ -10,25 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param guid 
- * @param condition 
- * @param bitValue 
- * @param `operator` 
- */
+ * *
+ * @param guid * @param condition * @param bitValue * @param `operator` */
 
-
-data class RuleCondition (
+data class RuleCondition(
 
     @field:JsonProperty("guid")
     val guid: java.util.UUID? = null,
@@ -40,7 +33,6 @@ data class RuleCondition (
     val bitValue: kotlin.Int? = null,
 
     @field:JsonProperty("operator")
-    val `operator`: kotlin.String? = null
+    val `operator`: kotlin.String? = null,
 
 )
-

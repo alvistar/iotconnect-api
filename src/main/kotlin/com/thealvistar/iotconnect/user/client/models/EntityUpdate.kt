@@ -10,25 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.user.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param userGuid 
- * @param invitationGuid 
- * @param isExistingUser 
- * @param isWelcomeEmail 
- */
+ * *
+ * @param userGuid * @param invitationGuid * @param isExistingUser * @param isWelcomeEmail */
 
-
-data class EntityUpdate (
+data class EntityUpdate(
 
     @field:JsonProperty("userGuid")
     val userGuid: kotlin.String? = null,
@@ -40,7 +33,6 @@ data class EntityUpdate (
     val isExistingUser: kotlin.Boolean? = null,
 
     @field:JsonProperty("isWelcomeEmail")
-    val isWelcomeEmail: kotlin.Boolean? = null
+    val isWelcomeEmail: kotlin.Boolean? = null,
 
 )
-

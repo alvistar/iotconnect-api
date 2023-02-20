@@ -10,25 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-import com.thealvistar.iotconnect.device.client.models.DeviceUpdate
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param deviceupdate 
- * @param submittedDate 
- * @param status 
- */
+ * *
+ * @param deviceupdate * @param submittedDate * @param status */
 
-
-data class ImportHistory (
+data class ImportHistory(
 
     @field:JsonProperty("deviceupdate")
     val deviceupdate: DeviceUpdate? = null,
@@ -37,7 +30,6 @@ data class ImportHistory (
     val submittedDate: java.time.OffsetDateTime? = null,
 
     @field:JsonProperty("status")
-    val status: kotlin.String? = null
+    val status: kotlin.String? = null,
 
 )
-

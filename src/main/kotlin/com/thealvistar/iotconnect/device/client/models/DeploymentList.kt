@@ -10,26 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param deploymentId 
- * @param deploymentType 
- * @param deviceGroupType 
- * @param startDateTime 
- * @param isCompleted 
- */
+ * *
+ * @param deploymentId * @param deploymentType * @param deviceGroupType * @param startDateTime * @param isCompleted */
 
-
-data class DeploymentList (
+data class DeploymentList(
 
     @field:JsonProperty("deploymentId")
     val deploymentId: kotlin.String? = null,
@@ -44,7 +36,6 @@ data class DeploymentList (
     val startDateTime: java.time.OffsetDateTime? = null,
 
     @field:JsonProperty("isCompleted")
-    val isCompleted: kotlin.Boolean? = null
+    val isCompleted: kotlin.Boolean? = null,
 
 )
-

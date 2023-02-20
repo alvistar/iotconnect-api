@@ -10,25 +10,20 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param smartRule 
- */
+ * *
+ * @param smartRule */
 
-
-data class RuleCounter (
+data class RuleCounter(
 
     @field:JsonProperty("smartRule")
-    val smartRule: kotlin.Int? = null
+    val smartRule: kotlin.Int? = null,
 
 )
-

@@ -10,26 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param guid 
- * @param name 
- * @param userName 
- * @param createdDate 
- * @param operation 
- */
+ * *
+ * @param guid * @param name * @param userName * @param createdDate * @param operation */
 
-
-data class RuleHistory (
+data class RuleHistory(
 
     @field:JsonProperty("guid")
     val guid: java.util.UUID? = null,
@@ -44,7 +36,6 @@ data class RuleHistory (
     val createdDate: java.time.OffsetDateTime? = null,
 
     @field:JsonProperty("operation")
-    val operation: kotlin.String? = null
+    val operation: kotlin.String? = null,
 
 )
-

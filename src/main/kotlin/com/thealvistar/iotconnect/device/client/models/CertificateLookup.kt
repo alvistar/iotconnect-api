@@ -10,25 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param guid 
- * @param name 
- * @param origin 
- * @param isSphereCerti 
- */
+ * *
+ * @param guid * @param name * @param origin * @param isSphereCerti */
 
-
-data class CertificateLookup (
+data class CertificateLookup(
 
     @field:JsonProperty("guid")
     val guid: kotlin.String? = null,
@@ -40,7 +33,6 @@ data class CertificateLookup (
     val origin: kotlin.String? = null,
 
     @field:JsonProperty("isSphereCerti")
-    val isSphereCerti: kotlin.Boolean? = null
+    val isSphereCerti: kotlin.Boolean? = null,
 
 )
-

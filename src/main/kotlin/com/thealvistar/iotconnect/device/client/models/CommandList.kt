@@ -10,33 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-import com.thealvistar.iotconnect.device.client.models.BatchCommandDevice
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param guid 
- * @param name 
- * @param command 
- * @param createdDate 
- * @param updatedDate 
- * @param requiredParam 
- * @param requiredAck 
- * @param isOTACommand 
- * @param tag 
- * @param isTemplateCommandUsed 
- * @param devices 
- */
+ * *
+ * @param guid * @param name * @param command * @param createdDate * @param updatedDate * @param requiredParam * @param requiredAck * @param isOTACommand * @param tag * @param isTemplateCommandUsed * @param devices */
 
-
-data class CommandList (
+data class CommandList(
 
     @field:JsonProperty("guid")
     val guid: kotlin.String? = null,
@@ -69,7 +54,6 @@ data class CommandList (
     val isTemplateCommandUsed: kotlin.Boolean? = null,
 
     @field:JsonProperty("devices")
-    val devices: kotlin.collections.List<BatchCommandDevice>? = null
+    val devices: kotlin.collections.List<BatchCommandDevice>? = null,
 
 )
-

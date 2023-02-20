@@ -10,19 +10,15 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-import com.thealvistar.iotconnect.device.client.models.RuleAudienceUpdate
-import com.thealvistar.iotconnect.device.client.models.WebHookBaseHeaderDetails
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
+ * *
  * @param isActive Active status, send false to Deactivate rule.
  * @param templateGuid Device Template Guid
  * @param name Rule Name
@@ -45,8 +41,7 @@ import com.fasterxml.jackson.annotation.JsonProperty
  * @param snoozeTimeUnit Snoonze time unit  1 : Minute,  2 : Hour,  3 : Day  Note : Default value is Minute if snoozeTime having value
  */
 
-
-data class RuleUpdateRequest (
+data class RuleUpdateRequest(
 
     /* Active status, send false to Deactivate rule. */
     @field:JsonProperty("isActive")
@@ -126,7 +121,6 @@ data class RuleUpdateRequest (
 
     /* Snoonze time unit  1 : Minute,  2 : Hour,  3 : Day  Note : Default value is Minute if snoozeTime having value */
     @field:JsonProperty("snoozeTimeUnit")
-    val snoozeTimeUnit: kotlin.Int? = null
+    val snoozeTimeUnit: kotlin.Int? = null,
 
 )
-

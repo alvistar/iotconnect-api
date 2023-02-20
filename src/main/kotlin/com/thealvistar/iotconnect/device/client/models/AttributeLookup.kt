@@ -10,25 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param guid 
- * @param localname 
- * @param isTemplateAttributeUsed 
- * @param parentTemplateAttributeGuid 
- */
+ * *
+ * @param guid * @param localname * @param isTemplateAttributeUsed * @param parentTemplateAttributeGuid */
 
-
-data class AttributeLookup (
+data class AttributeLookup(
 
     @field:JsonProperty("guid")
     val guid: kotlin.String? = null,
@@ -40,7 +33,6 @@ data class AttributeLookup (
     val isTemplateAttributeUsed: kotlin.Boolean? = null,
 
     @field:JsonProperty("parentTemplateAttributeGuid")
-    val parentTemplateAttributeGuid: kotlin.String? = null
+    val parentTemplateAttributeGuid: kotlin.String? = null,
 
 )
-

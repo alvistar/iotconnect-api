@@ -10,24 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param uniqueId 
- * @param status 
- * @param commandText 
- */
+ * *
+ * @param uniqueId * @param status * @param commandText */
 
-
-data class BatchCommandDevice (
+data class BatchCommandDevice(
 
     @field:JsonProperty("uniqueId")
     val uniqueId: kotlin.String? = null,
@@ -36,7 +30,6 @@ data class BatchCommandDevice (
     val status: kotlin.String? = null,
 
     @field:JsonProperty("commandText")
-    val commandText: kotlin.String? = null
+    val commandText: kotlin.String? = null,
 
 )
-

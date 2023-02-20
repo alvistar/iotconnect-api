@@ -10,27 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param name 
- * @param email 
- * @param userGuid 
- * @param reportingGroupGuid 
- * @param userDevicePermissionGuid 
- * @param permission 
- */
+ * *
+ * @param name * @param email * @param userGuid * @param reportingGroupGuid * @param userDevicePermissionGuid * @param permission */
 
-
-data class UserDevicePermissionList (
+data class UserDevicePermissionList(
 
     @field:JsonProperty("name")
     val name: kotlin.String? = null,
@@ -48,7 +39,6 @@ data class UserDevicePermissionList (
     val userDevicePermissionGuid: kotlin.String? = null,
 
     @field:JsonProperty("permission")
-    val permission: kotlin.collections.Map<kotlin.String, kotlin.Boolean>? = null
+    val permission: kotlin.collections.Map<kotlin.String, kotlin.Boolean>? = null,
 
 )
-

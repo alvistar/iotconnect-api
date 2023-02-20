@@ -10,58 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-import com.thealvistar.iotconnect.device.client.models.TemplateCommandData
-import com.thealvistar.iotconnect.device.client.models.TemplateDirecteMethodData
-import com.thealvistar.iotconnect.device.client.models.TemplateProperty
-import com.thealvistar.iotconnect.device.client.models.TemplateSettingData
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param guid 
- * @param templateCode 
- * @param templateName 
- * @param createdDate 
- * @param createdBy 
- * @param updatedDate 
- * @param updatedBy 
- * @param firmwareGuid 
- * @param firmwareName 
- * @param isEdgeSupport 
- * @param reqAttrPush 
- * @param reqSettingPush 
- * @param authType 
- * @param isType2Support 
- * @param tag 
- * @param attrXml 
- * @param attributes 
- * @param settingXml 
- * @param settings 
- * @param commandXml 
- * @param commands 
- * @param directMethodXml 
- * @param directMethods 
- * @param isValidateTemplate 
- * @param isValidEdgeSupport 
- * @param isValidType2Support 
- * @param isAttachedWithDevice 
- * @param dataLength 
- * @param isLowBandwidth 
- * @param isIotEdgeEnable 
- * @param isSolutionTemplate 
- * @param messageVersion 
- * @param `property` 
- */
+ * *
+ * @param guid * @param templateCode * @param templateName * @param createdDate * @param createdBy * @param updatedDate * @param updatedBy * @param firmwareGuid * @param firmwareName * @param isEdgeSupport * @param reqAttrPush * @param reqSettingPush * @param authType * @param isType2Support * @param tag * @param attrXml * @param attributes * @param settingXml * @param settings * @param commandXml * @param commands * @param directMethodXml * @param directMethods * @param isValidateTemplate * @param isValidEdgeSupport * @param isValidType2Support * @param isAttachedWithDevice * @param dataLength * @param isLowBandwidth * @param isIotEdgeEnable * @param isSolutionTemplate * @param messageVersion * @param `property` */
 
-
-data class TemplateDetail (
+data class TemplateDetail(
 
     @field:JsonProperty("guid")
     val guid: kotlin.String? = null,
@@ -160,7 +120,6 @@ data class TemplateDetail (
     val messageVersion: kotlin.String? = null,
 
     @field:JsonProperty("property")
-    val `property`: TemplateProperty? = null
+    val `property`: TemplateProperty? = null,
 
 )
-

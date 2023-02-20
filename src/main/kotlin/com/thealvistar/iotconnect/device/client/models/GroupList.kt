@@ -10,29 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-import com.thealvistar.iotconnect.device.client.models.SphereDeviceGroupListModel
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param guid 
- * @param name 
- * @param typeName 
- * @param isActive 
- * @param devices 
- * @param users 
- * @param sphereGroup 
- */
+ * *
+ * @param guid * @param name * @param typeName * @param isActive * @param devices * @param users * @param sphereGroup */
 
-
-data class GroupList (
+data class GroupList(
 
     @field:JsonProperty("guid")
     val guid: kotlin.String? = null,
@@ -53,7 +42,6 @@ data class GroupList (
     val users: kotlin.Int? = null,
 
     @field:JsonProperty("sphereGroup")
-    val sphereGroup: SphereDeviceGroupListModel? = null
+    val sphereGroup: SphereDeviceGroupListModel? = null,
 
 )
-

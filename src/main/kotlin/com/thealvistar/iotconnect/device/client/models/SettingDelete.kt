@@ -10,25 +10,20 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param deviceTemplateGuid 
- */
+ * *
+ * @param deviceTemplateGuid */
 
-
-data class SettingDelete (
+data class SettingDelete(
 
     @field:JsonProperty("deviceTemplateGuid")
-    val deviceTemplateGuid: kotlin.String? = null
+    val deviceTemplateGuid: kotlin.String? = null,
 
 )
-

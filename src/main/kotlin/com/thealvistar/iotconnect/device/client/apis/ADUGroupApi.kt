@@ -1,14 +1,10 @@
 package com.thealvistar.iotconnect.device.client.apis
 
-import retrofit2.http.*
-import retrofit2.Call
-import okhttp3.RequestBody
-import com.fasterxml.jackson.annotation.JsonProperty
-
 import com.thealvistar.iotconnect.device.client.models.ADUGroupCreateRequest
 import com.thealvistar.iotconnect.device.client.models.ADUGroupCreateResponse
 import com.thealvistar.iotconnect.device.client.models.ADUGroupsListResponse
-import com.thealvistar.iotconnect.device.client.models.ErrorsResponse
+import retrofit2.Call
+import retrofit2.http.*
 
 interface ADUGroupApi {
     /**
@@ -39,5 +35,4 @@ interface ADUGroupApi {
      */
     @POST("api/v2/adu-groups")
     fun apiV2AduGroupsPost(@Body adUGroupCreateRequest: ADUGroupCreateRequest? = null): Call<ADUGroupCreateResponse>
-
 }

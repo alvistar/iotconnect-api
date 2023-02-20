@@ -10,35 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.user.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param guid 
- * @param userId 
- * @param companyGuid 
- * @param firstName 
- * @param lastName 
- * @param timezoneGuid 
- * @param imageName 
- * @param isActive 
- * @param isDeleted 
- * @param createdBy 
- * @param updatedBy 
- * @param createdDate 
- * @param updatedDate 
- * @param isPasswordCreated 
- */
+ * *
+ * @param guid * @param userId * @param companyGuid * @param firstName * @param lastName * @param timezoneGuid * @param imageName * @param isActive * @param isDeleted * @param createdBy * @param updatedBy * @param createdDate * @param updatedDate * @param isPasswordCreated */
 
-
-data class UserAvailabilityUsingEmail (
+data class UserAvailabilityUsingEmail(
 
     @field:JsonProperty("guid")
     val guid: kotlin.String? = null,
@@ -80,7 +63,6 @@ data class UserAvailabilityUsingEmail (
     val updatedDate: java.time.OffsetDateTime? = null,
 
     @field:JsonProperty("isPasswordCreated")
-    val isPasswordCreated: kotlin.Int? = null
+    val isPasswordCreated: kotlin.Int? = null,
 
 )
-

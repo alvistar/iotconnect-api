@@ -10,24 +10,20 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param createDefaultGroups 
- * @param name Name of the sphere product
+ * *
+ * @param createDefaultGroups * @param name Name of the sphere product
  * @param description Sphere product description
  */
 
-
-data class ProductCreateRequest (
+data class ProductCreateRequest(
 
     @field:JsonProperty("createDefaultGroups")
     val createDefaultGroups: kotlin.Boolean? = null,
@@ -38,7 +34,6 @@ data class ProductCreateRequest (
 
     /* Sphere product description */
     @field:JsonProperty("description")
-    val description: kotlin.String? = null
+    val description: kotlin.String? = null,
 
 )
-

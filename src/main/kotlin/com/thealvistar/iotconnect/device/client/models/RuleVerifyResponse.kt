@@ -10,24 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param isValid 
- * @param attributes 
- * @param tags 
- */
+ * *
+ * @param isValid * @param attributes * @param tags */
 
-
-data class RuleVerifyResponse (
+data class RuleVerifyResponse(
 
     @field:JsonProperty("isValid")
     val isValid: kotlin.Boolean? = null,
@@ -36,7 +30,6 @@ data class RuleVerifyResponse (
     val attributes: kotlin.collections.List<kotlin.String>? = null,
 
     @field:JsonProperty("tags")
-    val tags: kotlin.collections.List<kotlin.String>? = null
+    val tags: kotlin.collections.List<kotlin.String>? = null,
 
 )
-

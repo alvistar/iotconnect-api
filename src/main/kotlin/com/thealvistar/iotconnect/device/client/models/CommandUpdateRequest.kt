@@ -10,17 +10,15 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
+ * *
  * @param name Template command name
  * @param deviceTemplateGuid Device Template Guid
  * @param command Template command
@@ -30,8 +28,7 @@ import com.fasterxml.jackson.annotation.JsonProperty
  * @param tag Tag, Required if device template has enabled gateway support.
  */
 
-
-data class CommandUpdateRequest (
+data class CommandUpdateRequest(
 
     /* Template command name */
     @field:JsonProperty("name")
@@ -59,7 +56,6 @@ data class CommandUpdateRequest (
 
     /* Tag, Required if device template has enabled gateway support. */
     @field:JsonProperty("tag")
-    val tag: kotlin.String? = null
+    val tag: kotlin.String? = null,
 
 )
-

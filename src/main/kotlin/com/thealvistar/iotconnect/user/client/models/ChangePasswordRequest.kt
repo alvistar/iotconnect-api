@@ -10,24 +10,21 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.user.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
+ * *
  * @param email User's login email Id. eg: abc@gmail.com
  * @param oldPassword Old login password.
  * @param newPassword New login password.
  */
 
-
-data class ChangePasswordRequest (
+data class ChangePasswordRequest(
 
     /* User's login email Id. eg: abc@gmail.com */
     @field:JsonProperty("email")
@@ -39,7 +36,6 @@ data class ChangePasswordRequest (
 
     /* New login password. */
     @field:JsonProperty("newPassword")
-    val newPassword: kotlin.String
+    val newPassword: kotlin.String,
 
 )
-

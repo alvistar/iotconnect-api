@@ -10,43 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param guid 
- * @param companyGuid 
- * @param templateSettingGuid 
- * @param deviceGuid 
- * @param createdDate 
- * @param sdkDate 
- * @param gatewayDate 
- * @param deviceDate 
- * @param desiredValue 
- * @param reportedValue 
- * @param desiredUpdatedDate 
- * @param reportedUpdatedDate 
- * @param desiredVersion 
- * @param name 
- * @param localName 
- * @param dataTypeName 
- * @param cpId 
- * @param uniqueId 
- * @param daTypeGuid 
- * @param isFault 
- * @param entityGuid 
- * @param isReadOnly 
- */
+ * *
+ * @param guid * @param companyGuid * @param templateSettingGuid * @param deviceGuid * @param createdDate * @param sdkDate * @param gatewayDate * @param deviceDate * @param desiredValue * @param reportedValue * @param desiredUpdatedDate * @param reportedUpdatedDate * @param desiredVersion * @param name * @param localName * @param dataTypeName * @param cpId * @param uniqueId * @param daTypeGuid * @param isFault * @param entityGuid * @param isReadOnly */
 
-
-data class DeviceTwinList (
+data class DeviceTwinList(
 
     @field:JsonProperty("guid")
     val guid: kotlin.String? = null,
@@ -112,7 +87,6 @@ data class DeviceTwinList (
     val entityGuid: java.util.UUID? = null,
 
     @field:JsonProperty("isReadOnly")
-    val isReadOnly: kotlin.Boolean? = null
+    val isReadOnly: kotlin.Boolean? = null,
 
 )
-

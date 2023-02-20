@@ -10,27 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param uniqueId 
- * @param date 
- * @param type 
- * @param error 
- * @param errorDetail 
- * @param `data` 
- */
+ * *
+ * @param uniqueId * @param date * @param type * @param error * @param errorDetail * @param `data` */
 
-
-data class InvalidDeviceCommunicationList (
+data class InvalidDeviceCommunicationList(
 
     @field:JsonProperty("uniqueId")
     val uniqueId: kotlin.String? = null,
@@ -48,7 +39,6 @@ data class InvalidDeviceCommunicationList (
     val errorDetail: kotlin.String? = null,
 
     @field:JsonProperty("data")
-    val `data`: kotlin.String? = null
+    val `data`: kotlin.String? = null,
 
 )
-

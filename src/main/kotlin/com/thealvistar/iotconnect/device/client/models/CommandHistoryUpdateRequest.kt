@@ -10,24 +10,21 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
+ * *
  * @param ackId Command History Guid
  * @param status New Status Code. 0: In Queue, 1: In Transit, 2: Failed, 3: Executed
  * @param statusText Status Text
  */
 
-
-data class CommandHistoryUpdateRequest (
+data class CommandHistoryUpdateRequest(
 
     /* Command History Guid */
     @field:JsonProperty("ackId")
@@ -39,7 +36,6 @@ data class CommandHistoryUpdateRequest (
 
     /* Status Text */
     @field:JsonProperty("statusText")
-    val statusText: kotlin.String? = null
+    val statusText: kotlin.String? = null,
 
 )
-

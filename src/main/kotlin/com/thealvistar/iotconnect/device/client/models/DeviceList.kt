@@ -10,58 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-import com.thealvistar.iotconnect.device.client.models.DeviceProperty
-import com.thealvistar.iotconnect.device.client.models.OutputparamListResponse
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param guid 
- * @param uniqueId 
- * @param displayName 
- * @param isConnected 
- * @param lastactivityDate 
- * @param isActive 
- * @param firmwareupgradeGuid 
- * @param deviceTemplateGuid 
- * @param authType 
- * @param authenticationType 
- * @param messageVersion 
- * @param isSolutionTemplate 
- * @param solutionName 
- * @param deviceInfo 
- * @param deviceTemplateName 
- * @param reportingTo 
- * @param entityName 
- * @param isAcquired 
- * @param childDeviceCount 
- * @param isType2Support 
- * @param isAllottedDevice 
- * @param allottedDevicePermission 
- * @param count 
- * @param isSharedDevice 
- * @param properties 
- * @param deviceStatus 
- * @param recentAttrValue 
- * @param isDpsDevice 
- * @param lastConnection 
- * @param lastCommunication 
- * @param solutionGuid 
- * @param groupName 
- * @param productName 
- * @param parentCompanyGuid 
- * @param info 
- */
+ * *
+ * @param guid * @param uniqueId * @param displayName * @param isConnected * @param lastactivityDate * @param isActive * @param firmwareupgradeGuid * @param deviceTemplateGuid * @param authType * @param authenticationType * @param messageVersion * @param isSolutionTemplate * @param solutionName * @param deviceInfo * @param deviceTemplateName * @param reportingTo * @param entityName * @param isAcquired * @param childDeviceCount * @param isType2Support * @param isAllottedDevice * @param allottedDevicePermission * @param count * @param isSharedDevice * @param properties * @param deviceStatus * @param recentAttrValue * @param isDpsDevice * @param lastConnection * @param lastCommunication * @param solutionGuid * @param groupName * @param productName * @param parentCompanyGuid * @param info */
 
-
-data class DeviceList (
+data class DeviceList(
 
     @field:JsonProperty("guid")
     val guid: kotlin.String? = null,
@@ -166,7 +126,6 @@ data class DeviceList (
     val parentCompanyGuid: java.util.UUID? = null,
 
     @field:JsonProperty("info")
-    val info: kotlin.collections.List<OutputparamListResponse>? = null
+    val info: kotlin.collections.List<OutputparamListResponse>? = null,
 
 )
-

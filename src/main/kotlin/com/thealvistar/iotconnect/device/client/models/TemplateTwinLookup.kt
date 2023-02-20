@@ -10,24 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param guid 
- * @param name 
- * @param messageVersion 
- */
+ * *
+ * @param guid * @param name * @param messageVersion */
 
-
-data class TemplateTwinLookup (
+data class TemplateTwinLookup(
 
     @field:JsonProperty("guid")
     val guid: kotlin.String? = null,
@@ -36,7 +30,6 @@ data class TemplateTwinLookup (
     val name: kotlin.String? = null,
 
     @field:JsonProperty("messageVersion")
-    val messageVersion: kotlin.String? = null
+    val messageVersion: kotlin.String? = null,
 
 )
-

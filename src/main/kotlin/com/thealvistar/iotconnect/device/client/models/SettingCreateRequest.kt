@@ -10,28 +10,24 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
+ * *
  * @param name Twin property name
  * @param dataTypeGuid Twin property's datatype guid. Note : Object datatype is not allowed for twin property.
  * @param deviceTemplateGuid Associated Device Template Guid
  * @param localName Twin property key
  * @param defaultValue Default value for twin property
  * @param dataValidation Data validation for the twin property values.   Type validation values and/or validation ranges separated by commas.<div> For example: </div><div>  1, 2, 10 to 20 </div> -10 to -5, -15 <div> Red, Green, Blue</div>
- * @param isReadOnly 
- */
+ * @param isReadOnly */
 
-
-data class SettingCreateRequest (
+data class SettingCreateRequest(
 
     /* Twin property name */
     @field:JsonProperty("name")
@@ -58,7 +54,6 @@ data class SettingCreateRequest (
     val dataValidation: kotlin.String? = null,
 
     @field:JsonProperty("isReadOnly")
-    val isReadOnly: kotlin.Boolean? = null
+    val isReadOnly: kotlin.Boolean? = null,
 
 )
-

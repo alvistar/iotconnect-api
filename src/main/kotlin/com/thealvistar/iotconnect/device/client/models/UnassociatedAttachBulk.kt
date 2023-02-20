@@ -10,37 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param guid 
- * @param uniqueId 
- * @param deviceTemplateGuid 
- * @param authType 
- * @param certificateThumbPrint 
- * @param tag 
- * @param parentDeviceGuid 
- * @param cpId 
- * @param isEdgeSupport 
- * @param entityGuid 
- * @param firmwareupgradeguid 
- * @param displayName 
- * @param isActive 
- * @param isDeleted 
- * @param note 
- * @param isAcquired 
- */
+ * *
+ * @param guid * @param uniqueId * @param deviceTemplateGuid * @param authType * @param certificateThumbPrint * @param tag * @param parentDeviceGuid * @param cpId * @param isEdgeSupport * @param entityGuid * @param firmwareupgradeguid * @param displayName * @param isActive * @param isDeleted * @param note * @param isAcquired */
 
-
-data class UnassociatedAttachBulk (
+data class UnassociatedAttachBulk(
 
     @field:JsonProperty("guid")
     val guid: kotlin.String? = null,
@@ -88,7 +69,6 @@ data class UnassociatedAttachBulk (
     val note: kotlin.String? = null,
 
     @field:JsonProperty("isAcquired")
-    val isAcquired: kotlin.Boolean? = null
+    val isAcquired: kotlin.Boolean? = null,
 
 )
-

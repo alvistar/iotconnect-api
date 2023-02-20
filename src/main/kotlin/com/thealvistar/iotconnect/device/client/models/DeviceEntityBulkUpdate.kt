@@ -10,34 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param errorText 
- * @param deviceGuid 
- * @param oldEntityGuid 
- * @param entityGuid 
- * @param uniqueId 
- * @param deviceTemplateGuid 
- * @param firmwareUpgradeGuid 
- * @param displayName 
- * @param isActive 
- * @param isDeleted 
- * @param note 
- * @param isAcquired 
- * @param parentDeviceGuid 
- */
+ * *
+ * @param errorText * @param deviceGuid * @param oldEntityGuid * @param entityGuid * @param uniqueId * @param deviceTemplateGuid * @param firmwareUpgradeGuid * @param displayName * @param isActive * @param isDeleted * @param note * @param isAcquired * @param parentDeviceGuid */
 
-
-data class DeviceEntityBulkUpdate (
+data class DeviceEntityBulkUpdate(
 
     @field:JsonProperty("errorText")
     val errorText: kotlin.String? = null,
@@ -76,7 +60,6 @@ data class DeviceEntityBulkUpdate (
     val isAcquired: kotlin.Int? = null,
 
     @field:JsonProperty("parentDeviceGuid")
-    val parentDeviceGuid: kotlin.String? = null
+    val parentDeviceGuid: kotlin.String? = null,
 
 )
-

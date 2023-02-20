@@ -10,30 +10,23 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-import com.thealvistar.iotconnect.device.client.models.DeviceGrantEmailsUpdate
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param success 
- * @param error 
- */
+ * *
+ * @param success * @param error */
 
-
-data class DeviceGrantEmailsUpdateResult (
+data class DeviceGrantEmailsUpdateResult(
 
     @field:JsonProperty("success")
     val success: kotlin.collections.List<DeviceGrantEmailsUpdate>? = null,
 
     @field:JsonProperty("error")
-    val error: kotlin.collections.List<DeviceGrantEmailsUpdate>? = null
+    val error: kotlin.collections.List<DeviceGrantEmailsUpdate>? = null,
 
 )
-

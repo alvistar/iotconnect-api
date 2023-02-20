@@ -10,25 +10,20 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param isConnected 
- */
+ * *
+ * @param isConnected */
 
-
-data class ConnectionStatus (
+data class ConnectionStatus(
 
     @field:JsonProperty("isConnected")
-    val isConnected: kotlin.Int? = null
+    val isConnected: kotlin.Int? = null,
 
 )
-

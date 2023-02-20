@@ -10,17 +10,15 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.user.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
+ * *
  * @param timeZoneGuid Timezone Guid. You can fetch timezone list from Master API.
  * @param emailNotification true or false. To turn on/off email notifications.
  * @param smsNotification true or false. To turn on/off sms notifications.
@@ -33,8 +31,7 @@ import com.fasterxml.jackson.annotation.JsonProperty
  * @param oldView true or false. To switch from old and new UI view.
  */
 
-
-data class PreferenceUpdateRequest (
+data class PreferenceUpdateRequest(
 
     /* Timezone Guid. You can fetch timezone list from Master API. */
     @field:JsonProperty("timeZoneGuid")
@@ -74,7 +71,6 @@ data class PreferenceUpdateRequest (
 
     /* true or false. To switch from old and new UI view. */
     @field:JsonProperty("oldView")
-    val oldView: kotlin.Boolean? = null
+    val oldView: kotlin.Boolean? = null,
 
 )
-

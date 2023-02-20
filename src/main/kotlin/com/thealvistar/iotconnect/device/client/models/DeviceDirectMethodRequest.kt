@@ -10,25 +10,22 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
+ * *
  * @param templateDirectMethodGuid Template Direct Method Guid
  * @param methodName MethodName
  * @param responseTimeoutInSeconds Response timeout seconds
  * @param payload Direct method payload
  */
 
-
-data class DeviceDirectMethodRequest (
+data class DeviceDirectMethodRequest(
 
     /* Template Direct Method Guid */
     @field:JsonProperty("templateDirectMethodGuid")
@@ -44,7 +41,6 @@ data class DeviceDirectMethodRequest (
 
     /* Direct method payload */
     @field:JsonProperty("payload")
-    val payload: kotlin.Any
+    val payload: kotlin.Any,
 
 )
-

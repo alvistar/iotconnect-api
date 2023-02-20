@@ -10,25 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-import com.thealvistar.iotconnect.device.client.models.DeviceUpdate
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param updateInfo 
- * @param aduGroup 
- * @param deploymentTime 
- */
+ * *
+ * @param updateInfo * @param aduGroup * @param deploymentTime */
 
-
-data class DeploymentCreateRequest (
+data class DeploymentCreateRequest(
 
     @field:JsonProperty("updateInfo")
     val updateInfo: DeviceUpdate? = null,
@@ -37,7 +30,6 @@ data class DeploymentCreateRequest (
     val aduGroup: kotlin.String? = null,
 
     @field:JsonProperty("deploymentTime")
-    val deploymentTime: java.time.OffsetDateTime? = null
+    val deploymentTime: java.time.OffsetDateTime? = null,
 
 )
-

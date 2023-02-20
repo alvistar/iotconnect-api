@@ -10,30 +10,25 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
+ * *
  * @param deviceTemplateGuid Associated Device Template Guid
- * @param isReadOnly 
- */
+ * @param isReadOnly */
 
-
-data class TemplateSettingUpdateReadOnlyRequest (
+data class TemplateSettingUpdateReadOnlyRequest(
 
     /* Associated Device Template Guid */
     @field:JsonProperty("deviceTemplateGuid")
     val deviceTemplateGuid: kotlin.String,
 
     @field:JsonProperty("isReadOnly")
-    val isReadOnly: kotlin.Boolean? = null
+    val isReadOnly: kotlin.Boolean? = null,
 
 )
-

@@ -10,25 +10,21 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
+ * *
  * @param startDate Start date format should be YYYY-MM-DD
  * @param exportType Export Type : 1 for Template, 2 for Entity and 3 for Device
  * @param guids Guid list for selected export type. For example, if exportType is template then send template guid list.
- * @param endDate 
- */
+ * @param endDate */
 
-
-data class CosmosExportHistoryRequest (
+data class CosmosExportHistoryRequest(
 
     /* Start date format should be YYYY-MM-DD */
     @field:JsonProperty("startDate")
@@ -43,7 +39,7 @@ data class CosmosExportHistoryRequest (
     val guids: kotlin.collections.List<kotlin.String>,
 
     @field:JsonProperty("endDate")
-    val endDate: kotlin.String? = null
+    val endDate: kotlin.String? = null,
 
 ) {
 
@@ -53,9 +49,13 @@ data class CosmosExportHistoryRequest (
      * Values: _1,_2,_3
      */
     enum class ExportType(val value: kotlin.Int) {
-        @JsonProperty(value = "1") _1(1),
-        @JsonProperty(value = "2") _2(2),
-        @JsonProperty(value = "3") _3(3);
+        @JsonProperty(value = "1")
+        _1(1),
+
+        @JsonProperty(value = "2")
+        _2(2),
+
+        @JsonProperty(value = "3")
+        _3(3),
     }
 }
-

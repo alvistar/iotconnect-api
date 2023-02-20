@@ -10,26 +10,22 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
+ * *
  * @param deviceguid The device guid of device, Duplicate device guid not allowed.
  */
 
-
-data class DeviceGuids (
+data class DeviceGuids(
 
     /* The device guid of device, Duplicate device guid not allowed. */
     @field:JsonProperty("deviceguid")
-    val deviceguid: kotlin.String
+    val deviceguid: kotlin.String,
 
 )
-

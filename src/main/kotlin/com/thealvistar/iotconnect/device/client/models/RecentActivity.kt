@@ -10,29 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param uniqueId 
- * @param deviceName 
- * @param entityName 
- * @param createdDate 
- * @param type2Support 
- * @param edgeSupport 
- * @param lowbandWidth 
- * @param iotEdgeEnable 
- */
+ * *
+ * @param uniqueId * @param deviceName * @param entityName * @param createdDate * @param type2Support * @param edgeSupport * @param lowbandWidth * @param iotEdgeEnable */
 
-
-data class RecentActivity (
+data class RecentActivity(
 
     @field:JsonProperty("uniqueId")
     val uniqueId: kotlin.String? = null,
@@ -56,7 +45,6 @@ data class RecentActivity (
     val lowbandWidth: kotlin.Boolean? = null,
 
     @field:JsonProperty("iotEdgeEnable")
-    val iotEdgeEnable: kotlin.Boolean? = null
+    val iotEdgeEnable: kotlin.Boolean? = null,
 
 )
-

@@ -10,33 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param guid 
- * @param name 
- * @param command 
- * @param createdDate 
- * @param createdBy 
- * @param updatedDate 
- * @param updatedBy 
- * @param requiredParam 
- * @param requiredAck 
- * @param isOTACommand 
- * @param isTemplateCommandUsed 
- * @param tag 
- */
+ * *
+ * @param guid * @param name * @param command * @param createdDate * @param createdBy * @param updatedDate * @param updatedBy * @param requiredParam * @param requiredAck * @param isOTACommand * @param isTemplateCommandUsed * @param tag */
 
-
-data class TemplateCommandData (
+data class TemplateCommandData(
 
     @field:JsonProperty("guid")
     val guid: java.util.UUID? = null,
@@ -72,7 +57,6 @@ data class TemplateCommandData (
     val isTemplateCommandUsed: kotlin.Boolean? = null,
 
     @field:JsonProperty("tag")
-    val tag: kotlin.String? = null
+    val tag: kotlin.String? = null,
 
 )
-

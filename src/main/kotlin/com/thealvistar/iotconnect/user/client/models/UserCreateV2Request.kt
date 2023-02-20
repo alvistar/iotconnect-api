@@ -10,18 +10,15 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.user.client.models
 
-import com.thealvistar.iotconnect.user.client.models.Property
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
+ * *
  * @param userId User's login email id. eg: abc@gmail.com
  * @param isActive User's active status. 1: Active, 0: Inactive
  * @param firstName User's first name
@@ -31,14 +28,11 @@ import com.fasterxml.jackson.annotation.JsonProperty
  * @param entityGuid Entity Guid
  * @param isTempPassword To enable/disable IDS temp password for user, Send <i>true</i> to enable and <i>false</i> to disable.
  * @param sendInvitationEmail To receive invitation email from IDS
- * @param password 
- * @param properties Custom properties allows you to add additional information about user. You can add multiple custom properties.
- * @param xmlProperties 
- * @param contactNo User's contact no. eg: 91-1234567890
+ * @param password * @param properties Custom properties allows you to add additional information about user. You can add multiple custom properties.
+ * @param xmlProperties * @param contactNo User's contact no. eg: 91-1234567890
  */
 
-
-data class UserCreateV2Request (
+data class UserCreateV2Request(
 
     /* User's login email id. eg: abc@gmail.com */
     @field:JsonProperty("userId")
@@ -88,7 +82,6 @@ data class UserCreateV2Request (
 
     /* User's contact no. eg: 91-1234567890 */
     @field:JsonProperty("contactNo")
-    val contactNo: kotlin.String? = null
+    val contactNo: kotlin.String? = null,
 
 )
-

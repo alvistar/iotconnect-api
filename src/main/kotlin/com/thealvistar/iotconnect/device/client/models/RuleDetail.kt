@@ -10,48 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-import com.thealvistar.iotconnect.device.client.models.RuleAudienceModel
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param guid 
- * @param companyGuid 
- * @param templateGuid 
- * @param attributeGuid 
- * @param ruleType 
- * @param parentAttributeGuid 
- * @param name 
- * @param conditionText 
- * @param ignorePreference 
- * @param entityGuid 
- * @param applyTo 
- * @param isActive 
- * @param eventSubscriptionGuid 
- * @param eventSubscription 
- * @param tag 
- * @param roles 
- * @param users 
- * @param devices 
- * @param isEdgeSupport 
- * @param isType2Support 
- * @param isLowBandwidth 
- * @param isIotEdgeEnable 
- * @param snoozeTime 
- * @param snoozeTimeUnit 
- * @param ruleAudiences 
- * @param reportingGroupGuid 
- */
+ * *
+ * @param guid * @param companyGuid * @param templateGuid * @param attributeGuid * @param ruleType * @param parentAttributeGuid * @param name * @param conditionText * @param ignorePreference * @param entityGuid * @param applyTo * @param isActive * @param eventSubscriptionGuid * @param eventSubscription * @param tag * @param roles * @param users * @param devices * @param isEdgeSupport * @param isType2Support * @param isLowBandwidth * @param isIotEdgeEnable * @param snoozeTime * @param snoozeTimeUnit * @param ruleAudiences * @param reportingGroupGuid */
 
-
-data class RuleDetail (
+data class RuleDetail(
 
     @field:JsonProperty("guid")
     val guid: kotlin.String? = null,
@@ -129,7 +99,6 @@ data class RuleDetail (
     val ruleAudiences: kotlin.collections.List<RuleAudienceModel>? = null,
 
     @field:JsonProperty("reportingGroupGuid")
-    val reportingGroupGuid: kotlin.String? = null
+    val reportingGroupGuid: kotlin.String? = null,
 
 )
-

@@ -10,25 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param guid 
- * @param name 
- * @param command 
- * @param requiredParam 
- */
+ * *
+ * @param guid * @param name * @param command * @param requiredParam */
 
-
-data class CommandLookup (
+data class CommandLookup(
 
     @field:JsonProperty("guid")
     val guid: kotlin.String? = null,
@@ -40,7 +33,6 @@ data class CommandLookup (
     val command: kotlin.String? = null,
 
     @field:JsonProperty("requiredParam")
-    val requiredParam: kotlin.Boolean? = null
+    val requiredParam: kotlin.Boolean? = null,
 
 )
-

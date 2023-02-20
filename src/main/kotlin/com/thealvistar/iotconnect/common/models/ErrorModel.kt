@@ -10,29 +10,23 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.common.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param `param` 
- * @param message 
- */
+ * *
+ * @param `param` * @param message */
 
-
-data class ErrorModel (
+data class ErrorModel(
 
     @field:JsonProperty("param")
     val `param`: kotlin.String? = null,
 
     @field:JsonProperty("message")
-    val message: kotlin.String? = null
+    val message: kotlin.String? = null,
 
 )
-

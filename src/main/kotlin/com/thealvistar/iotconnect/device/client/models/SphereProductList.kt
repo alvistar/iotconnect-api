@@ -10,24 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param guid 
- * @param name 
- * @param description 
- */
+ * *
+ * @param guid * @param name * @param description */
 
-
-data class SphereProductList (
+data class SphereProductList(
 
     @field:JsonProperty("guid")
     val guid: java.util.UUID? = null,
@@ -36,7 +30,6 @@ data class SphereProductList (
     val name: kotlin.String? = null,
 
     @field:JsonProperty("description")
-    val description: kotlin.String? = null
+    val description: kotlin.String? = null,
 
 )
-

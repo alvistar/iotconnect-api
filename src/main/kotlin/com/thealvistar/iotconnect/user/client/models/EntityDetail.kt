@@ -10,41 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.user.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param guid 
- * @param name 
- * @param parentEntityGuid 
- * @param description 
- * @param childEntityLabel 
- * @param companyGuid 
- * @param isDeleted 
- * @param createdDate 
- * @param createdBy 
- * @param updatedDate 
- * @param updatedBy 
- * @param address 
- * @param city 
- * @param stateGuid 
- * @param countryGuid 
- * @param timezoneGuid 
- * @param defaultuserGuid 
- * @param zipCode 
- * @param address2 
- * @param entityInfo 
- */
+ * *
+ * @param guid * @param name * @param parentEntityGuid * @param description * @param childEntityLabel * @param companyGuid * @param isDeleted * @param createdDate * @param createdBy * @param updatedDate * @param updatedBy * @param address * @param city * @param stateGuid * @param countryGuid * @param timezoneGuid * @param defaultuserGuid * @param zipCode * @param address2 * @param entityInfo */
 
-
-data class EntityDetail (
+data class EntityDetail(
 
     @field:JsonProperty("guid")
     val guid: kotlin.String? = null,
@@ -104,7 +81,6 @@ data class EntityDetail (
     val address2: kotlin.String? = null,
 
     @field:JsonProperty("entityInfo")
-    val entityInfo: kotlin.Any? = null
+    val entityInfo: kotlin.Any? = null,
 
 )
-

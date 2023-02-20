@@ -112,4 +112,4 @@ data class UserListByEntity(
     @field:JsonProperty("isLocked")
     val isLocked: kotlin.Boolean? = null,
 
-    )
+)

@@ -10,26 +10,22 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
+ * *
  * @param isActive Scheduled Command Active Status : true/false
  */
 
-
-data class CommandScheduleUpdateStatusRequest (
+data class CommandScheduleUpdateStatusRequest(
 
     /* Scheduled Command Active Status : true/false */
     @field:JsonProperty("isActive")
-    val isActive: kotlin.Boolean
+    val isActive: kotlin.Boolean,
 
 )
-

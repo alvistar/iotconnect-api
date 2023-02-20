@@ -10,30 +10,25 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.user.client.models
 
-import com.thealvistar.iotconnect.user.client.models.PropertyValue
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
+ * *
  * @param firstName User's first name
  * @param lastName User's last name
  * @param timezoneGuid Timezone Guid. You can fetch timezone list from Master API
  * @param roleGuid Role Guid
  * @param entityGuid Entity Guid
  * @param properties Custom properties allows you to add additional information about user. You can add multiple custom properties.
- * @param xmlProperties 
- * @param contactNo User's contact no. eg: 91-1234567890
+ * @param xmlProperties * @param contactNo User's contact no. eg: 91-1234567890
  */
 
-
-data class UserUpdateRequest (
+data class UserUpdateRequest(
 
     /* User's first name */
     @field:JsonProperty("firstName")
@@ -64,7 +59,6 @@ data class UserUpdateRequest (
 
     /* User's contact no. eg: 91-1234567890 */
     @field:JsonProperty("contactNo")
-    val contactNo: kotlin.String? = null
+    val contactNo: kotlin.String? = null,
 
 )
-

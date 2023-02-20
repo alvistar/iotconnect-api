@@ -10,37 +10,29 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.user.client.models
 
-import com.thealvistar.iotconnect.user.client.models.UserInfo
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
+ * *
  * @param name Entity Name
  * @param parentEntityGuid Parent Entity Guid
  * @param ownerUserGuid Entity owner user guid
- * @param isRemoveEntityOwner 
- * @param description Entity Description
- * @param childEntityLabel 
- * @param address Entity Address
+ * @param isRemoveEntityOwner * @param description Entity Description
+ * @param childEntityLabel * @param address Entity Address
  * @param address2 Entity Address 2
  * @param city City Name
  * @param stateGuid State Guid. You can fetch country wise state list from Master API
  * @param countryGuid Country Guid. You can fetch country list from Master API
  * @param zipCode Zip Code
  * @param timezoneGuid Timezone Guid. You can fetch timezone list from Master API
- * @param userInfo 
- * @param userInfoXml 
- */
+ * @param userInfo * @param userInfoXml */
 
-
-data class EntityUpdateRequest (
+data class EntityUpdateRequest(
 
     /* Entity Name */
     @field:JsonProperty("name")
@@ -96,7 +88,6 @@ data class EntityUpdateRequest (
     val userInfo: UserInfo? = null,
 
     @field:JsonProperty("userInfoXml")
-    val userInfoXml: kotlin.Any? = null
+    val userInfoXml: kotlin.Any? = null,
 
 )
-

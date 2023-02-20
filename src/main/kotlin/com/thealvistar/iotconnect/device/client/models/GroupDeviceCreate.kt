@@ -10,30 +10,23 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-import com.thealvistar.iotconnect.device.client.models.StatusModel
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param error 
- * @param success 
- */
+ * *
+ * @param error * @param success */
 
-
-data class GroupDeviceCreate (
+data class GroupDeviceCreate(
 
     @field:JsonProperty("error")
     val error: kotlin.collections.List<StatusModel>? = null,
 
     @field:JsonProperty("success")
-    val success: kotlin.collections.List<StatusModel>? = null
+    val success: kotlin.collections.List<StatusModel>? = null,
 
 )
-

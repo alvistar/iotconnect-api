@@ -10,23 +10,20 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
+ * *
  * @param emails An email address list, not allowed duplicate email addresses.
  * @param permission Permission list, Represents a dictionary of pemission(true/false) accessed by permission name.  Note : Here, 'view' and 'operation' are available permission and at least one permission is required Eg. {\"view\" : true, \"operation\" : false}
  */
 
-
-data class DeviceGrantEmailsUpdateRequest (
+data class DeviceGrantEmailsUpdateRequest(
 
     /* An email address list, not allowed duplicate email addresses. */
     @field:JsonProperty("emails")
@@ -34,7 +31,6 @@ data class DeviceGrantEmailsUpdateRequest (
 
     /* Permission list, Represents a dictionary of pemission(true/false) accessed by permission name.  Note : Here, 'view' and 'operation' are available permission and at least one permission is required Eg. {\"view\" : true, \"operation\" : false} */
     @field:JsonProperty("permission")
-    val permission: kotlin.collections.Map<kotlin.String, kotlin.Any>
+    val permission: kotlin.collections.Map<kotlin.String, kotlin.Any>,
 
 )
-

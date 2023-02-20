@@ -10,17 +10,15 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
+ * *
  * @param code Unique device template code. Template code must be alphanumeric and must start with the alphabet .
  * @param isEdgeSupport For devices with edge support
  * @param authType Authentication Type - 1: Key, 2: CA Signed Certificate, 3: Self Signed Certificate, 4: TPM, 5: Symmetric Key,6: DDKG,7: BootstrapCertificate, 8: PKISignature
@@ -28,14 +26,10 @@ import com.fasterxml.jackson.annotation.JsonProperty
  * @param tag For Gateway supported Devices.   It should be alphanumeric with allowed two consecutive '_' and must be started with the alphabet.   Eg. Temperature, Humadity, oxygenIn1, Temperature_In, Temperature__Out, Oxygen_In__1  etc.
  * @param dataLength For devices with low bandwidth support
  * @param isIotEdgeEnable True to devices is Azure IoTEdge.
- * @param messageVersion 
- * @param isSphere 
- * @param trustedPartnerGuid 
- * @param firmwareguid Firmware hardware version guid
+ * @param messageVersion * @param isSphere * @param trustedPartnerGuid * @param firmwareguid Firmware hardware version guid
  */
 
-
-data class TemplateCreateRequest (
+data class TemplateCreateRequest(
 
     /* Unique device template code. Template code must be alphanumeric and must start with the alphabet . */
     @field:JsonProperty("code")
@@ -76,7 +70,6 @@ data class TemplateCreateRequest (
 
     /* Firmware hardware version guid */
     @field:JsonProperty("firmwareguid")
-    val firmwareguid: kotlin.String? = null
+    val firmwareguid: kotlin.String? = null,
 
 )
-

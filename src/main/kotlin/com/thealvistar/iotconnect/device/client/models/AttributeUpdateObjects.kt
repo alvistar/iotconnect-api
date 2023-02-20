@@ -10,17 +10,15 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
+ * *
  * @param localName Child attribute's name.   It should be alphanumeric and allows two consecutive '_' and must start with the alphabet.   Eg. Temperature, Humadity, oxygenIn1, Temperature_In, Temperature__Out, Oxygen_In__1  etc.
  * @param dataTypeGuid Child attribute's datatype guid, Object datatype is not allowed for child attributes.
  * @param guid Child attribute's guid
@@ -33,8 +31,7 @@ import com.fasterxml.jackson.annotation.JsonProperty
  * @param attributeColor Color Code of attribute.
  */
 
-
-data class AttributeUpdateObjects (
+data class AttributeUpdateObjects(
 
     /* Child attribute's name.   It should be alphanumeric and allows two consecutive '_' and must start with the alphabet.   Eg. Temperature, Humadity, oxygenIn1, Temperature_In, Temperature__Out, Oxygen_In__1  etc. */
     @field:JsonProperty("localName")
@@ -74,7 +71,6 @@ data class AttributeUpdateObjects (
 
     /* Color Code of attribute. */
     @field:JsonProperty("attributeColor")
-    val attributeColor: kotlin.String? = null
+    val attributeColor: kotlin.String? = null,
 
 )
-

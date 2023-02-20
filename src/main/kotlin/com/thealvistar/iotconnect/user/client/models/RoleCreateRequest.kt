@@ -10,24 +10,21 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.user.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
+ * *
  * @param name Role Name
  * @param solutions Solution guid list
  * @param description Role Description
  */
 
-
-data class RoleCreateRequest (
+data class RoleCreateRequest(
 
     /* Role Name */
     @field:JsonProperty("name")
@@ -39,7 +36,6 @@ data class RoleCreateRequest (
 
     /* Role Description */
     @field:JsonProperty("description")
-    val description: kotlin.String? = null
+    val description: kotlin.String? = null,
 
 )
-

@@ -10,30 +10,23 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-import com.thealvistar.iotconnect.device.client.models.DeviceCounters
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param entity 
- * @param counters 
- */
+ * *
+ * @param entity * @param counters */
 
-
-data class DeviceStatistic (
+data class DeviceStatistic(
 
     @field:JsonProperty("entity")
     val entity: kotlin.String? = null,
 
     @field:JsonProperty("counters")
-    val counters: DeviceCounters? = null
+    val counters: DeviceCounters? = null,
 
 )
-

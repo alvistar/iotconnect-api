@@ -10,23 +10,20 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
+ * *
  * @param sequence Attribute's new sequence number
  * @param deviceTemplateGuid Associated device template guid.
  */
 
-
-data class AttributeUpdateSequenceRequest (
+data class AttributeUpdateSequenceRequest(
 
     /* Attribute's new sequence number */
     @field:JsonProperty("sequence")
@@ -34,7 +31,6 @@ data class AttributeUpdateSequenceRequest (
 
     /* Associated device template guid. */
     @field:JsonProperty("deviceTemplateGuid")
-    val deviceTemplateGuid: kotlin.String
+    val deviceTemplateGuid: kotlin.String,
 
 )
-

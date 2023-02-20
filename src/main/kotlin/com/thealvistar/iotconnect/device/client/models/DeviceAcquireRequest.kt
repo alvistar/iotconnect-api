@@ -10,24 +10,21 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
+ * *
  * @param deviceCertificate Byte array of device certificate file(Only .pfx file allowed).
  * @param deviceCertificatePassword Password of device certificate
  * @param rootCAIndividualCertificateGuid root CA Individual certificate guid.
  */
 
-
-data class DeviceAcquireRequest (
+data class DeviceAcquireRequest(
 
     /* Byte array of device certificate file(Only .pfx file allowed). */
     @field:JsonProperty("deviceCertificate")
@@ -39,7 +36,6 @@ data class DeviceAcquireRequest (
 
     /* root CA Individual certificate guid. */
     @field:JsonProperty("rootCAIndividualCertificateGuid")
-    val rootCAIndividualCertificateGuid: kotlin.String? = null
+    val rootCAIndividualCertificateGuid: kotlin.String? = null,
 
 )
-

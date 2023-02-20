@@ -10,25 +10,20 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param newId 
- */
+ * *
+ * @param newId */
 
-
-data class CertificateCreate (
+data class CertificateCreate(
 
     @field:JsonProperty("newId")
-    val newId: kotlin.String? = null
+    val newId: kotlin.String? = null,
 
 )
-

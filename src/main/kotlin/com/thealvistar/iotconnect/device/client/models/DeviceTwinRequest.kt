@@ -10,24 +10,21 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
+ * *
  * @param localName The twin property name of device.
  * @param desiredValue The twin property value of device. twin property value should be valid as per device template setting datatype.
  * @param templateSettingGuid Template Setting Guid
  */
 
-
-data class DeviceTwinRequest (
+data class DeviceTwinRequest(
 
     /* The twin property name of device. */
     @field:JsonProperty("localName")
@@ -39,7 +36,6 @@ data class DeviceTwinRequest (
 
     /* Template Setting Guid */
     @field:JsonProperty("templateSettingGuid")
-    val templateSettingGuid: kotlin.String
+    val templateSettingGuid: kotlin.String,
 
 )
-

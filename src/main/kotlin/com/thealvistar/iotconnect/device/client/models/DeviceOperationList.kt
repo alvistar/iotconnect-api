@@ -10,28 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param guid 
- * @param startDate 
- * @param endDate 
- * @param isActive 
- * @param isDeleted 
- * @param createddate 
- * @param createdby 
- */
+ * *
+ * @param guid * @param startDate * @param endDate * @param isActive * @param isDeleted * @param createddate * @param createdby */
 
-
-data class DeviceOperationList (
+data class DeviceOperationList(
 
     @field:JsonProperty("guid")
     val guid: java.util.UUID? = null,
@@ -52,7 +42,6 @@ data class DeviceOperationList (
     val createddate: java.time.OffsetDateTime? = null,
 
     @field:JsonProperty("createdby")
-    val createdby: java.util.UUID? = null
+    val createdby: java.util.UUID? = null,
 
 )
-

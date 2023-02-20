@@ -10,48 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param guid 
- * @param code 
- * @param name 
- * @param description 
- * @param firmwareGuid 
- * @param createdDate 
- * @param updatedDate 
- * @param attributeCount 
- * @param settingCount 
- * @param commandCount 
- * @param deviceCount 
- * @param ruleCount 
- * @param isValidateTemplate 
- * @param isValidEdgeSupport 
- * @param isValidType2Support 
- * @param tag 
- * @param authType 
- * @param isEdgeSupport 
- * @param gatewaySupport 
- * @param isLowBandwidth 
- * @param isIotEdgeEnable 
- * @param isSolutionTemplate 
- * @param solutionName 
- * @param messageVersion 
- * @param fileSupport 
- * @param directMethodCount 
- * @param authenticationType 
- */
+ * *
+ * @param guid * @param code * @param name * @param description * @param firmwareGuid * @param createdDate * @param updatedDate * @param attributeCount * @param settingCount * @param commandCount * @param deviceCount * @param ruleCount * @param isValidateTemplate * @param isValidEdgeSupport * @param isValidType2Support * @param tag * @param authType * @param isEdgeSupport * @param gatewaySupport * @param isLowBandwidth * @param isIotEdgeEnable * @param isSolutionTemplate * @param solutionName * @param messageVersion * @param fileSupport * @param directMethodCount * @param authenticationType */
 
-
-data class TemplateList (
+data class TemplateList(
 
     @field:JsonProperty("guid")
     val guid: kotlin.String? = null,
@@ -132,7 +102,6 @@ data class TemplateList (
     val directMethodCount: kotlin.Int? = null,
 
     @field:JsonProperty("authenticationType")
-    val authenticationType: kotlin.String? = null
+    val authenticationType: kotlin.String? = null,
 
 )
-

@@ -10,24 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param fName 
- * @param dName 
- * @param `value` 
- */
+ * *
+ * @param fName * @param dName * @param `value` */
 
-
-data class OutputparamListResponse (
+data class OutputparamListResponse(
 
     @field:JsonProperty("fName")
     val fName: kotlin.String? = null,
@@ -36,7 +30,6 @@ data class OutputparamListResponse (
     val dName: kotlin.String? = null,
 
     @field:JsonProperty("value")
-    val `value`: kotlin.Any? = null
+    val `value`: kotlin.Any? = null,
 
 )
-

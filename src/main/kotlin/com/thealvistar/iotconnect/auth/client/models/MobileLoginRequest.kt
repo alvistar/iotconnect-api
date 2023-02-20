@@ -10,28 +10,24 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.auth.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
+ * *
  * @param username User's login email id
  * @param password User's login password
  * @param deviceType Type of the device used for login
  * @param osName Device os name
  * @param osVersion Device os version
  * @param deviceToken Device token
- * @param uuid 
- */
+ * @param uuid */
 
-
-data class MobileLoginRequest (
+data class MobileLoginRequest(
 
     /* User's login email id */
     @field:JsonProperty("username")
@@ -58,7 +54,6 @@ data class MobileLoginRequest (
     val deviceToken: kotlin.String,
 
     @field:JsonProperty("uuid")
-    val uuid: kotlin.String
+    val uuid: kotlin.String,
 
 )
-

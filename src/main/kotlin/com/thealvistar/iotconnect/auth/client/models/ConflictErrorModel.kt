@@ -10,25 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.auth.client.models
 
-import com.thealvistar.iotconnect.auth.client.models.ErrorModel
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param status 
- * @param message 
- * @param error 
- */
+ * *
+ * @param status * @param message * @param error */
 
-
-data class ConflictErrorModel (
+data class ConflictErrorModel(
 
     @field:JsonProperty("status")
     val status: kotlin.Int? = null,
@@ -37,7 +30,6 @@ data class ConflictErrorModel (
     val message: kotlin.String? = null,
 
     @field:JsonProperty("error")
-    val error: kotlin.collections.List<ErrorModel>? = null
+    val error: kotlin.collections.List<ErrorModel>? = null,
 
 )
-

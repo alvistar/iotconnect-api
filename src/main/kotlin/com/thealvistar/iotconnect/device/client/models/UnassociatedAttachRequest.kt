@@ -10,29 +10,22 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
+ * *
  * @param entityGuid Entity Guid
  * @param deviceTemplateGuid Template Guid
- * @param deviceGuid 
- * @param primaryThumbprint 
- * @param secondaryThumbprint 
- * @param deviceCertificateGuid The certificateGuid of devicetemplate.
+ * @param deviceGuid * @param primaryThumbprint * @param secondaryThumbprint * @param deviceCertificateGuid The certificateGuid of devicetemplate.
  * @param endorsementKey The endorsementKey of TPM device. This field is required if device template authentication type is TPM.
- * @param isSphere 
- */
+ * @param isSphere */
 
-
-data class UnassociatedAttachRequest (
+data class UnassociatedAttachRequest(
 
     /* Entity Guid */
     @field:JsonProperty("entityGuid")
@@ -60,7 +53,6 @@ data class UnassociatedAttachRequest (
     val endorsementKey: kotlin.String? = null,
 
     @field:JsonProperty("isSphere")
-    val isSphere: kotlin.Boolean? = null
+    val isSphere: kotlin.Boolean? = null,
 
 )
-

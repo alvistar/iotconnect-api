@@ -10,23 +10,20 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.user.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
+ * *
  * @param email User's login email Id. eg: abc@gmail.com
  * @param sendTempPassword Send <i>true</i> to receive temp password email from IDS
  */
 
-
-data class ForgotPasswordRequest (
+data class ForgotPasswordRequest(
 
     /* User's login email Id. eg: abc@gmail.com */
     @field:JsonProperty("email")
@@ -34,7 +31,6 @@ data class ForgotPasswordRequest (
 
     /* Send <i>true</i> to receive temp password email from IDS */
     @field:JsonProperty("sendTempPassword")
-    val sendTempPassword: kotlin.Boolean? = null
+    val sendTempPassword: kotlin.Boolean? = null,
 
 )
-

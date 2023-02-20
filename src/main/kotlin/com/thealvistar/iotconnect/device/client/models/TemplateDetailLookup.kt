@@ -10,24 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param attributes 
- * @param settings 
- * @param commands 
- */
+ * *
+ * @param attributes * @param settings * @param commands */
 
-
-data class TemplateDetailLookup (
+data class TemplateDetailLookup(
 
     @field:JsonProperty("attributes")
     val attributes: kotlin.Any? = null,
@@ -36,7 +30,6 @@ data class TemplateDetailLookup (
     val settings: kotlin.Any? = null,
 
     @field:JsonProperty("commands")
-    val commands: kotlin.Any? = null
+    val commands: kotlin.Any? = null,
 
 )
-

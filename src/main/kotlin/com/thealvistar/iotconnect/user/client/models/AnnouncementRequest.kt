@@ -10,26 +10,22 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.user.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
+ * *
  * @param announcementGuid Announcement Guid
  */
 
-
-data class AnnouncementRequest (
+data class AnnouncementRequest(
 
     /* Announcement Guid */
     @field:JsonProperty("announcementGuid")
-    val announcementGuid: kotlin.collections.List<kotlin.String>? = null
+    val announcementGuid: kotlin.collections.List<kotlin.String>? = null,
 
 )
-

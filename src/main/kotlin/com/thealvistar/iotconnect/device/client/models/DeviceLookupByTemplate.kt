@@ -10,27 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param reportedValue 
- * @param desiredValue 
- * @param desiredUpdatedDate 
- * @param reportedUpdatedDate 
- * @param uniqueId 
- * @param localName 
- */
+ * *
+ * @param reportedValue * @param desiredValue * @param desiredUpdatedDate * @param reportedUpdatedDate * @param uniqueId * @param localName */
 
-
-data class DeviceLookupByTemplate (
+data class DeviceLookupByTemplate(
 
     @field:JsonProperty("reportedValue")
     val reportedValue: kotlin.String? = null,
@@ -48,7 +39,6 @@ data class DeviceLookupByTemplate (
     val uniqueId: kotlin.String? = null,
 
     @field:JsonProperty("localName")
-    val localName: kotlin.String? = null
+    val localName: kotlin.String? = null,
 
 )
-

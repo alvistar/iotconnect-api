@@ -10,32 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param guid 
- * @param name 
- * @param isEdgeSupport 
- * @param isIotEdgeEnable 
- * @param authType 
- * @param code 
- * @param isType2Support 
- * @param tag 
- * @param isSolutionTemplate 
- * @param solutionName 
- * @param messageVersion 
- */
+ * *
+ * @param guid * @param name * @param isEdgeSupport * @param isIotEdgeEnable * @param authType * @param code * @param isType2Support * @param tag * @param isSolutionTemplate * @param solutionName * @param messageVersion */
 
-
-data class TemplateLookup (
+data class TemplateLookup(
 
     @field:JsonProperty("guid")
     val guid: kotlin.String? = null,
@@ -68,7 +54,6 @@ data class TemplateLookup (
     val solutionName: kotlin.String? = null,
 
     @field:JsonProperty("messageVersion")
-    val messageVersion: kotlin.String? = null
+    val messageVersion: kotlin.String? = null,
 
 )
-

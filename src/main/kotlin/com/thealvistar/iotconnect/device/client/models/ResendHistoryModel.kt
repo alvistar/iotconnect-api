@@ -10,29 +10,23 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param resendCount 
- * @param execTime 
- */
+ * *
+ * @param resendCount * @param execTime */
 
-
-data class ResendHistoryModel (
+data class ResendHistoryModel(
 
     @field:JsonProperty("resendCount")
     val resendCount: kotlin.Int? = null,
 
     @field:JsonProperty("execTime")
-    val execTime: kotlin.collections.List<java.time.OffsetDateTime>? = null
+    val execTime: kotlin.collections.List<java.time.OffsetDateTime>? = null,
 
 )
-

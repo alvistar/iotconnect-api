@@ -10,23 +10,20 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
+ * *
  * @param deviceTemplateGuid Device template guid
  * @param expression Condition statement triggers Rule on telemetry data that meet specified criteria. Criteria are expressed in the form of predicates.  <div>Condition on attribute(localname) if device template is non gateway Eg. : </div><div>1) Temperature > 50</div><div>2) Temperature > 50 AND Humidity < 20</div><div>3) Temperature > 50 AND ( Humidity < 20 OR WaterLevel > 10 )</div><div>4) Status = \"on\"</div><div></div><div>Condition on attribute({tag}#{localname}) if device template has enabled gateway enabled Eg. : </div><div>1) Tag1#Temperature > 50</div><div>2) Tag1#Temperature > 50 AND Tag2#Humidity < 20</div><div>3) Tag1#Temperature > 50 AND ( Tag2#Humidity < 20 OR Tag2#WaterLevel > 10 )</div><div>4) Tag3#Status = \"on\"</div>
  */
 
-
-data class RuleVerifyRequest (
+data class RuleVerifyRequest(
 
     /* Device template guid */
     @field:JsonProperty("deviceTemplateGuid")
@@ -34,7 +31,6 @@ data class RuleVerifyRequest (
 
     /* Condition statement triggers Rule on telemetry data that meet specified criteria. Criteria are expressed in the form of predicates.  <div>Condition on attribute(localname) if device template is non gateway Eg. : </div><div>1) Temperature > 50</div><div>2) Temperature > 50 AND Humidity < 20</div><div>3) Temperature > 50 AND ( Humidity < 20 OR WaterLevel > 10 )</div><div>4) Status = \"on\"</div><div></div><div>Condition on attribute({tag}#{localname}) if device template has enabled gateway enabled Eg. : </div><div>1) Tag1#Temperature > 50</div><div>2) Tag1#Temperature > 50 AND Tag2#Humidity < 20</div><div>3) Tag1#Temperature > 50 AND ( Tag2#Humidity < 20 OR Tag2#WaterLevel > 10 )</div><div>4) Tag3#Status = \"on\"</div> */
     @field:JsonProperty("expression")
-    val expression: kotlin.String
+    val expression: kotlin.String,
 
 )
-

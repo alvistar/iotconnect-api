@@ -10,25 +10,20 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param importBatchGuid 
- */
+ * *
+ * @param importBatchGuid */
 
-
-data class ImportBatchStatus (
+data class ImportBatchStatus(
 
     @field:JsonProperty("importBatchGuid")
-    val importBatchGuid: kotlin.String? = null
+    val importBatchGuid: kotlin.String? = null,
 
 )
-

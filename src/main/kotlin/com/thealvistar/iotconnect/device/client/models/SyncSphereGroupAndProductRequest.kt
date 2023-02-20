@@ -10,29 +10,23 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param deviceGuid 
- * @param deviceId 
- */
+ * *
+ * @param deviceGuid * @param deviceId */
 
-
-data class SyncSphereGroupAndProductRequest (
+data class SyncSphereGroupAndProductRequest(
 
     @field:JsonProperty("deviceGuid")
     val deviceGuid: java.util.UUID? = null,
 
     @field:JsonProperty("deviceId")
-    val deviceId: kotlin.String? = null
+    val deviceId: kotlin.String? = null,
 
 )
-

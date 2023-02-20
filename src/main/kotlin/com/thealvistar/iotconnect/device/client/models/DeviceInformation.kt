@@ -10,66 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-import com.thealvistar.iotconnect.device.client.models.DeviceProperty
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param guid 
- * @param uniqueId 
- * @param displayName 
- * @param isConnected 
- * @param lastActivityDate 
- * @param isActive 
- * @param firmwareUpgradeGuid 
- * @param deviceTemplateGuid 
- * @param entityGuid 
- * @param certificateGuid 
- * @param certificateName 
- * @param certificateType 
- * @param deviceTemplateAuthType 
- * @param entityName 
- * @param deviceTemplateName 
- * @param note 
- * @param image 
- * @param cpId 
- * @param isAcquired 
- * @param firmwareAvail 
- * @param parentDeviceGuid 
- * @param tag 
- * @param parentDeviceUniqueId 
- * @param isParentAcquired 
- * @param isSimulatorOn 
- * @param isType2Support 
- * @param isEdgeSupport 
- * @param isAllottedDevice 
- * @param allottedDevicePermission 
- * @param imageUrl 
- * @param properties 
- * @param deviceStatus 
- * @param isLowBandwidth 
- * @param isIotEdgeEnable 
- * @param isSolutionTemplate 
- * @param fileSupport 
- * @param msgCode 
- * @param messageVersion 
- * @param hasTwin 
- * @param hasDirectMethod 
- * @param parentCompanyGuid 
- * @param companyGuid 
- * @param lastConnection 
- * @param isDpsDevice 
- */
+ * *
+ * @param guid * @param uniqueId * @param displayName * @param isConnected * @param lastActivityDate * @param isActive * @param firmwareUpgradeGuid * @param deviceTemplateGuid * @param entityGuid * @param certificateGuid * @param certificateName * @param certificateType * @param deviceTemplateAuthType * @param entityName * @param deviceTemplateName * @param note * @param image * @param cpId * @param isAcquired * @param firmwareAvail * @param parentDeviceGuid * @param tag * @param parentDeviceUniqueId * @param isParentAcquired * @param isSimulatorOn * @param isType2Support * @param isEdgeSupport * @param isAllottedDevice * @param allottedDevicePermission * @param imageUrl * @param properties * @param deviceStatus * @param isLowBandwidth * @param isIotEdgeEnable * @param isSolutionTemplate * @param fileSupport * @param msgCode * @param messageVersion * @param hasTwin * @param hasDirectMethod * @param parentCompanyGuid * @param companyGuid * @param lastConnection * @param isDpsDevice */
 
-
-data class DeviceInformation (
+data class DeviceInformation(
 
     @field:JsonProperty("guid")
     val guid: kotlin.String? = null,
@@ -201,7 +153,6 @@ data class DeviceInformation (
     val lastConnection: java.time.OffsetDateTime? = null,
 
     @field:JsonProperty("isDpsDevice")
-    val isDpsDevice: kotlin.Boolean? = null
+    val isDpsDevice: kotlin.Boolean? = null,
 
 )
-

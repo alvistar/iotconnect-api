@@ -10,25 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param desc 
- * @param osFeedType 
- * @param updatePolicy 
- * @param productId 
- */
+ * *
+ * @param desc * @param osFeedType * @param updatePolicy * @param productId */
 
-
-data class SphereDeviceGroupModel (
+data class SphereDeviceGroupModel(
 
     @field:JsonProperty("desc")
     val desc: kotlin.String? = null,
@@ -40,28 +33,34 @@ data class SphereDeviceGroupModel (
     val updatePolicy: SphereDeviceGroupModel.UpdatePolicy? = null,
 
     @field:JsonProperty("productId")
-    val productId: java.util.UUID? = null
+    val productId: java.util.UUID? = null,
 
 ) {
 
     /**
-     * 
-     *
+     * *
      * Values: _0,_1
      */
     enum class OsFeedType(val value: kotlin.Int) {
-        @JsonProperty(value = "0") _0(0),
-        @JsonProperty(value = "1") _1(1);
+        @JsonProperty(value = "0")
+        _0(0),
+
+        @JsonProperty(value = "1")
+        _1(1),
     }
+
     /**
-     * 
-     *
+     * *
      * Values: _0,_1,_2
      */
     enum class UpdatePolicy(val value: kotlin.Int) {
-        @JsonProperty(value = "0") _0(0),
-        @JsonProperty(value = "1") _1(1),
-        @JsonProperty(value = "2") _2(2);
+        @JsonProperty(value = "0")
+        _0(0),
+
+        @JsonProperty(value = "1")
+        _1(1),
+
+        @JsonProperty(value = "2")
+        _2(2),
     }
 }
-

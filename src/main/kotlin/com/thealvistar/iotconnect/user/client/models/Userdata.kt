@@ -10,31 +10,23 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.user.client.models
 
-import com.thealvistar.iotconnect.user.client.models.Error
-import com.thealvistar.iotconnect.user.client.models.SuccessDataResponse
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param error 
- * @param success 
- */
+ * *
+ * @param error * @param success */
 
-
-data class Userdata (
+data class Userdata(
 
     @field:JsonProperty("error")
     val error: kotlin.collections.List<Error>? = null,
 
     @field:JsonProperty("success")
-    val success: kotlin.collections.List<SuccessDataResponse>? = null
+    val success: kotlin.collections.List<SuccessDataResponse>? = null,
 
 )
-

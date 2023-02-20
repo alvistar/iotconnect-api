@@ -10,51 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.user.client.models
 
-import com.thealvistar.iotconnect.user.client.models.AuthenticationFeatures
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param companyLogo 
- * @param firstName 
- * @param lastName 
- * @param timezoneGuid 
- * @param version 
- * @param uiVersion 
- * @param parentEntityGuid 
- * @param pageSize 
- * @param userGuid 
- * @param roleGuid 
- * @param companyGuid 
- * @param companyLogoUrl 
- * @param permissions 
- * @param companyName 
- * @param roleName 
- * @param cpId 
- * @param entityGuid 
- * @param solutionGuid 
- * @param isCompanyAdmin 
- * @param authFeatures 
- * @param configSettings 
- * @param userId 
- * @param isDefaultDashboard 
- * @param isServiceAccountEnabled 
- * @param companyType 
- * @param reviewStatus 
- * @param oldView 
- * @param languageGuid 
- * @param cd 
- */
+ * *
+ * @param companyLogo * @param firstName * @param lastName * @param timezoneGuid * @param version * @param uiVersion * @param parentEntityGuid * @param pageSize * @param userGuid * @param roleGuid * @param companyGuid * @param companyLogoUrl * @param permissions * @param companyName * @param roleName * @param cpId * @param entityGuid * @param solutionGuid * @param isCompanyAdmin * @param authFeatures * @param configSettings * @param userId * @param isDefaultDashboard * @param isServiceAccountEnabled * @param companyType * @param reviewStatus * @param oldView * @param languageGuid * @param cd */
 
-
-data class UserIdentity (
+data class UserIdentity(
 
     @field:JsonProperty("companyLogo")
     val companyLogo: kotlin.String? = null,
@@ -141,7 +108,6 @@ data class UserIdentity (
     val languageGuid: kotlin.String? = null,
 
     @field:JsonProperty("cd")
-    val cd: kotlin.String? = null
+    val cd: kotlin.String? = null,
 
 )
-

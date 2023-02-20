@@ -10,36 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param uniqueId 
- * @param authType 
- * @param maskedIpAddress 
- * @param statusCode 
- * @param time 
- * @param operationName 
- * @param category 
- * @param level 
- * @param resultDescription 
- * @param location 
- * @param partitionKey 
- * @param rowKey 
- * @param timestamp 
- * @param eTag 
- * @param properties 
- */
+ * *
+ * @param uniqueId * @param authType * @param maskedIpAddress * @param statusCode * @param time * @param operationName * @param category * @param level * @param resultDescription * @param location * @param partitionKey * @param rowKey * @param timestamp * @param eTag * @param properties */
 
-
-data class DeviceDiagnostics (
+data class DeviceDiagnostics(
 
     @field:JsonProperty("uniqueId")
     val uniqueId: kotlin.String? = null,
@@ -84,7 +66,6 @@ data class DeviceDiagnostics (
     val eTag: kotlin.String? = null,
 
     @field:JsonProperty("properties")
-    val properties: kotlin.String? = null
+    val properties: kotlin.String? = null,
 
 )
-

@@ -10,29 +10,23 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param deviceGuid 
- * @param statusMessage 
- */
+ * *
+ * @param deviceGuid * @param statusMessage */
 
-
-data class StatusModel (
+data class StatusModel(
 
     @field:JsonProperty("deviceGuid")
     val deviceGuid: kotlin.String? = null,
 
     @field:JsonProperty("statusMessage")
-    val statusMessage: kotlin.String? = null
+    val statusMessage: kotlin.String? = null,
 
 )
-

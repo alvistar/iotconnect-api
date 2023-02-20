@@ -10,25 +10,20 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.user.client.models
 
-import com.thealvistar.iotconnect.user.client.models.Roleguid
-import com.thealvistar.iotconnect.user.client.models.Userguid
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
+ * *
  * @param userguids User Guid List
  * @param roleguids Role Guid List
  */
 
-
-data class UserSearchRequest (
+data class UserSearchRequest(
 
     /* User Guid List */
     @field:JsonProperty("userguids")
@@ -36,7 +31,6 @@ data class UserSearchRequest (
 
     /* Role Guid List */
     @field:JsonProperty("roleguids")
-    val roleguids: kotlin.collections.List<Roleguid>? = null
+    val roleguids: kotlin.collections.List<Roleguid>? = null,
 
 )
-

@@ -10,25 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param newid 
- * @param entityGuid 
- * @param parentUniqueId 
- * @param uniqueId 
- */
+ * *
+ * @param newid * @param entityGuid * @param parentUniqueId * @param uniqueId */
 
-
-data class CreateDevice (
+data class CreateDevice(
 
     @field:JsonProperty("newid")
     val newid: kotlin.String? = null,
@@ -40,7 +33,6 @@ data class CreateDevice (
     val parentUniqueId: kotlin.String? = null,
 
     @field:JsonProperty("uniqueId")
-    val uniqueId: kotlin.String? = null
+    val uniqueId: kotlin.String? = null,
 
 )
-

@@ -10,26 +10,22 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.auth.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
+ * *
  * @param refreshtoken Refresh token
  */
 
-
-data class RefreshTokenRequest (
+data class RefreshTokenRequest(
 
     /* Refresh token */
     @field:JsonProperty("refreshtoken")
-    val refreshtoken: kotlin.String
+    val refreshtoken: kotlin.String,
 
 )
-

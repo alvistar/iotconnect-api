@@ -10,41 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param guid 
- * @param companyGuid 
- * @param commandGuid 
- * @param commandName 
- * @param templateGuid 
- * @param templateName 
- * @param applyTo 
- * @param entityGuid 
- * @param isRecursive 
- * @param selectedDevices 
- * @param unit 
- * @param unitValue 
- * @param unitTime 
- * @param parameterValue 
- * @param isActive 
- * @param tagList 
- * @param selectedTag 
- * @param commandList 
- * @param deviceList 
- * @param nextExecutionDate 
- */
+ * *
+ * @param guid * @param companyGuid * @param commandGuid * @param commandName * @param templateGuid * @param templateName * @param applyTo * @param entityGuid * @param isRecursive * @param selectedDevices * @param unit * @param unitValue * @param unitTime * @param parameterValue * @param isActive * @param tagList * @param selectedTag * @param commandList * @param deviceList * @param nextExecutionDate */
 
-
-data class CommandScheduleDetail (
+data class CommandScheduleDetail(
 
     @field:JsonProperty("guid")
     val guid: kotlin.String? = null,
@@ -104,7 +81,6 @@ data class CommandScheduleDetail (
     val deviceList: kotlin.Any? = null,
 
     @field:JsonProperty("nextExecutionDate")
-    val nextExecutionDate: kotlin.String? = null
+    val nextExecutionDate: kotlin.String? = null,
 
 )
-

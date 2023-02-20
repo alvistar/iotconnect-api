@@ -1,7 +1,6 @@
 import org.junit.jupiter.api.Test
 
-class ApiTest
-{
+class ApiTest {
     @Test
     fun firstTest() {
         println()

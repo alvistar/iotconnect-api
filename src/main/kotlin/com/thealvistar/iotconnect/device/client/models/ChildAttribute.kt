@@ -10,40 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param guid 
- * @param localName 
- * @param description 
- * @param dataTypeGuid 
- * @param dataTypeName 
- * @param dataValidation 
- * @param unit 
- * @param tag 
- * @param sequence 
- * @param parentTemplateAttributeGuid 
- * @param isTemplateAttributeUsed 
- * @param aggregateType 
- * @param aggregateTypeCount 
- * @param tumblingWindow 
- * @param startIndex 
- * @param numChar 
- * @param isPowerBIAttributeUsed 
- * @param attributeColor 
- * @param conditionBitValue 
- */
+ * *
+ * @param guid * @param localName * @param description * @param dataTypeGuid * @param dataTypeName * @param dataValidation * @param unit * @param tag * @param sequence * @param parentTemplateAttributeGuid * @param isTemplateAttributeUsed * @param aggregateType * @param aggregateTypeCount * @param tumblingWindow * @param startIndex * @param numChar * @param isPowerBIAttributeUsed * @param attributeColor * @param conditionBitValue */
 
-
-data class ChildAttribute (
+data class ChildAttribute(
 
     @field:JsonProperty("guid")
     val guid: kotlin.String? = null,
@@ -100,7 +78,6 @@ data class ChildAttribute (
     val attributeColor: kotlin.String? = null,
 
     @field:JsonProperty("conditionBitValue")
-    val conditionBitValue: kotlin.Int? = null
+    val conditionBitValue: kotlin.Int? = null,
 
 )
-

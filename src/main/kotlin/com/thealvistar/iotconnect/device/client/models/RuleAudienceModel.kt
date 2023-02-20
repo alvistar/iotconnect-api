@@ -10,26 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param interval 
- * @param intervalUnit 
- * @param roleGuids 
- * @param userGuids 
- * @param guid 
- */
+ * *
+ * @param interval * @param intervalUnit * @param roleGuids * @param userGuids * @param guid */
 
-
-data class RuleAudienceModel (
+data class RuleAudienceModel(
 
     @field:JsonProperty("interval")
     val interval: kotlin.Int? = null,
@@ -44,7 +36,6 @@ data class RuleAudienceModel (
     val userGuids: kotlin.collections.List<kotlin.String>? = null,
 
     @field:JsonProperty("guid")
-    val guid: kotlin.String? = null
+    val guid: kotlin.String? = null,
 
 )
-

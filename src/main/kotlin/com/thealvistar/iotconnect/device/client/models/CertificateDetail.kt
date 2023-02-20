@@ -10,43 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param guid 
- * @param name 
- * @param type 
- * @param primayThumbPrint 
- * @param clientCert 
- * @param certPassword 
- * @param validTill 
- * @param companyGuid 
- * @param isActive 
- * @param isDeleted 
- * @param createdDate 
- * @param createdBy 
- * @param updatedDate 
- * @param updatedBy 
- * @param isVerified 
- * @param etag 
- * @param origin 
- * @param isDeviceConnected 
- * @param clientCertUrl 
- * @param brokerGuid 
- * @param isSphereCerti 
- * @param iotHubInfoGuid 
- */
+ * *
+ * @param guid * @param name * @param type * @param primayThumbPrint * @param clientCert * @param certPassword * @param validTill * @param companyGuid * @param isActive * @param isDeleted * @param createdDate * @param createdBy * @param updatedDate * @param updatedBy * @param isVerified * @param etag * @param origin * @param isDeviceConnected * @param clientCertUrl * @param brokerGuid * @param isSphereCerti * @param iotHubInfoGuid */
 
-
-data class CertificateDetail (
+data class CertificateDetail(
 
     @field:JsonProperty("guid")
     val guid: kotlin.String? = null,
@@ -112,7 +87,6 @@ data class CertificateDetail (
     val isSphereCerti: kotlin.Boolean? = null,
 
     @field:JsonProperty("iotHubInfoGuid")
-    val iotHubInfoGuid: java.util.UUID? = null
+    val iotHubInfoGuid: java.util.UUID? = null,
 
 )
-

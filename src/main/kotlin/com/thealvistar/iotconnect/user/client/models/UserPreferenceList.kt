@@ -10,32 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.user.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param guid 
- * @param timeZoneGuid 
- * @param emailNotification 
- * @param emailNotifyOn 
- * @param alternateEmailID 
- * @param smsNotification 
- * @param pushNotification 
- * @param pageSize 
- * @param platformEmails 
- * @param oldView 
- * @param languageGuid 
- */
+ * *
+ * @param guid * @param timeZoneGuid * @param emailNotification * @param emailNotifyOn * @param alternateEmailID * @param smsNotification * @param pushNotification * @param pageSize * @param platformEmails * @param oldView * @param languageGuid */
 
-
-data class UserPreferenceList (
+data class UserPreferenceList(
 
     @field:JsonProperty("guid")
     val guid: kotlin.String? = null,
@@ -68,7 +54,6 @@ data class UserPreferenceList (
     val oldView: kotlin.Boolean? = null,
 
     @field:JsonProperty("languageGuid")
-    val languageGuid: kotlin.String? = null
+    val languageGuid: kotlin.String? = null,
 
 )
-

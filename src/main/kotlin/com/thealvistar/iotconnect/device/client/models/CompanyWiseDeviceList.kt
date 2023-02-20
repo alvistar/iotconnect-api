@@ -10,45 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param guid 
- * @param uniqueId 
- * @param displayName 
- * @param isConnected 
- * @param isAcquired 
- * @param lastactivityDate 
- * @param isActive 
- * @param deviceStatus 
- * @param authType 
- * @param firmwareupgradeGuid 
- * @param deviceTemplateGuid 
- * @param deviceInfo 
- * @param deviceTemplateName 
- * @param reportingTo 
- * @param entityGuid 
- * @param entityName 
- * @param childDeviceCount 
- * @param isType2Support 
- * @param createdByName 
- * @param createdDate 
- * @param cpid 
- * @param companyGuid 
- * @param lastConnection 
- * @param lastCommunication 
- */
+ * *
+ * @param guid * @param uniqueId * @param displayName * @param isConnected * @param isAcquired * @param lastactivityDate * @param isActive * @param deviceStatus * @param authType * @param firmwareupgradeGuid * @param deviceTemplateGuid * @param deviceInfo * @param deviceTemplateName * @param reportingTo * @param entityGuid * @param entityName * @param childDeviceCount * @param isType2Support * @param createdByName * @param createdDate * @param cpid * @param companyGuid * @param lastConnection * @param lastCommunication */
 
-
-data class CompanyWiseDeviceList (
+data class CompanyWiseDeviceList(
 
     @field:JsonProperty("guid")
     val guid: kotlin.String? = null,
@@ -120,7 +93,6 @@ data class CompanyWiseDeviceList (
     val lastConnection: java.time.OffsetDateTime? = null,
 
     @field:JsonProperty("lastCommunication")
-    val lastCommunication: java.time.OffsetDateTime? = null
+    val lastCommunication: java.time.OffsetDateTime? = null,
 
 )
-

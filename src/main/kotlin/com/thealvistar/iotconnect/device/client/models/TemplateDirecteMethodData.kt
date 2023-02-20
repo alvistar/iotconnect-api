@@ -10,26 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param guid 
- * @param methodName 
- * @param responseTimeoutSecond 
- * @param createdBy 
- * @param createdDate 
- */
+ * *
+ * @param guid * @param methodName * @param responseTimeoutSecond * @param createdBy * @param createdDate */
 
-
-data class TemplateDirecteMethodData (
+data class TemplateDirecteMethodData(
 
     @field:JsonProperty("guid")
     val guid: java.util.UUID? = null,
@@ -44,7 +36,6 @@ data class TemplateDirecteMethodData (
     val createdBy: java.util.UUID? = null,
 
     @field:JsonProperty("createdDate")
-    val createdDate: java.time.OffsetDateTime? = null
+    val createdDate: java.time.OffsetDateTime? = null,
 
 )
-

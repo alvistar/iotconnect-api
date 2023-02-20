@@ -10,25 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param groupId 
- * @param groupType 
- * @param tags 
- * @param createdDateTime 
- */
+ * *
+ * @param groupId * @param groupType * @param tags * @param createdDateTime */
 
-
-data class ADUGroupCreate (
+data class ADUGroupCreate(
 
     @field:JsonProperty("groupId")
     val groupId: kotlin.String? = null,
@@ -40,19 +33,22 @@ data class ADUGroupCreate (
     val tags: kotlin.collections.List<kotlin.String>? = null,
 
     @field:JsonProperty("createdDateTime")
-    val createdDateTime: kotlin.String? = null
+    val createdDateTime: kotlin.String? = null,
 
 ) {
 
     /**
-     * 
-     *
+     * *
      * Values: _0,_1,_2
      */
     enum class GroupType(val value: kotlin.Int) {
-        @JsonProperty(value = "0") _0(0),
-        @JsonProperty(value = "1") _1(1),
-        @JsonProperty(value = "2") _2(2);
+        @JsonProperty(value = "0")
+        _0(0),
+
+        @JsonProperty(value = "1")
+        _1(1),
+
+        @JsonProperty(value = "2")
+        _2(2),
     }
 }
-

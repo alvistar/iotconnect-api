@@ -10,32 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-import com.thealvistar.iotconnect.device.client.models.ResendHistoryModel
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param commandHistoryGuid 
- * @param uniqueId 
- * @param parentDeviceUniqueId 
- * @param status 
- * @param cmdText 
- * @param statusDate 
- * @param createdByName 
- * @param isResend 
- * @param resendHistory 
- * @param statusText 
- */
+ * *
+ * @param commandHistoryGuid * @param uniqueId * @param parentDeviceUniqueId * @param status * @param cmdText * @param statusDate * @param createdByName * @param isResend * @param resendHistory * @param statusText */
 
-
-data class CommandHistoryList (
+data class CommandHistoryList(
 
     @field:JsonProperty("commandHistoryGuid")
     val commandHistoryGuid: kotlin.String? = null,
@@ -65,7 +51,6 @@ data class CommandHistoryList (
     val resendHistory: ResendHistoryModel? = null,
 
     @field:JsonProperty("statusText")
-    val statusText: kotlin.String? = null
+    val statusText: kotlin.String? = null,
 
 )
-

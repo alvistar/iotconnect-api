@@ -10,29 +10,23 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.user.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param authType 
- * @param features 
- */
+ * *
+ * @param authType * @param features */
 
-
-data class AuthenticationFeatures (
+data class AuthenticationFeatures(
 
     @field:JsonProperty("authType")
     val authType: kotlin.String? = null,
 
     @field:JsonProperty("features")
-    val features: kotlin.Any? = null
+    val features: kotlin.Any? = null,
 
 )
-

@@ -10,29 +10,23 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param key 
- * @param `value` 
- */
+ * *
+ * @param key * @param `value` */
 
-
-data class WebHookBaseHeaderDetails (
+data class WebHookBaseHeaderDetails(
 
     @field:JsonProperty("key")
     val key: kotlin.String,
 
     @field:JsonProperty("value")
-    val `value`: kotlin.String
+    val `value`: kotlin.String,
 
 )
-

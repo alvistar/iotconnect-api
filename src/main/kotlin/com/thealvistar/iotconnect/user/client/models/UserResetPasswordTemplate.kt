@@ -10,25 +10,20 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.user.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param eventPlaceHolders 
- */
+ * *
+ * @param eventPlaceHolders */
 
-
-data class UserResetPasswordTemplate (
+data class UserResetPasswordTemplate(
 
     @field:JsonProperty("eventPlaceHolders")
-    val eventPlaceHolders: kotlin.String? = null
+    val eventPlaceHolders: kotlin.String? = null,
 
 )
-

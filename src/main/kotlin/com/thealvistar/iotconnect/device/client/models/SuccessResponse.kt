@@ -10,24 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param message 
- * @param status 
- * @param `data` 
- */
+ * *
+ * @param message * @param status * @param `data` */
 
-
-data class SuccessResponse (
+data class SuccessResponse(
 
     @field:JsonProperty("message")
     val message: kotlin.String? = null,
@@ -36,7 +30,6 @@ data class SuccessResponse (
     val status: kotlin.Int? = null,
 
     @field:JsonProperty("data")
-    val `data`: kotlin.collections.List<kotlin.Any>? = null
+    val `data`: kotlin.collections.List<kotlin.Any>? = null,
 
 )
-

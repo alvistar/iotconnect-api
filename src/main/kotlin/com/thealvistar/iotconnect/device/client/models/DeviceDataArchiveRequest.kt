@@ -10,23 +10,20 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
+ * *
  * @param toDate To date time for archive data which are older then this date time   Date format should be YYYY-MM-DD
  * @param supportTicketNumber Support ticket number for archive device data
  */
 
-
-data class DeviceDataArchiveRequest (
+data class DeviceDataArchiveRequest(
 
     /* To date time for archive data which are older then this date time   Date format should be YYYY-MM-DD */
     @field:JsonProperty("toDate")
@@ -34,7 +31,6 @@ data class DeviceDataArchiveRequest (
 
     /* Support ticket number for archive device data */
     @field:JsonProperty("supportTicketNumber")
-    val supportTicketNumber: kotlin.String? = null
+    val supportTicketNumber: kotlin.String? = null,
 
 )
-

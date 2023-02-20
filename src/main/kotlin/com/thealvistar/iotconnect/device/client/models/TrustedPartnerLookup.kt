@@ -10,25 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param guid 
- * @param name 
- * @param description 
- * @param type 
- */
+ * *
+ * @param guid * @param name * @param description * @param type */
 
-
-data class TrustedPartnerLookup (
+data class TrustedPartnerLookup(
 
     @field:JsonProperty("guid")
     val guid: java.util.UUID? = null,
@@ -40,7 +33,6 @@ data class TrustedPartnerLookup (
     val description: kotlin.String? = null,
 
     @field:JsonProperty("type")
-    val type: kotlin.String? = null
+    val type: kotlin.String? = null,
 
 )
-

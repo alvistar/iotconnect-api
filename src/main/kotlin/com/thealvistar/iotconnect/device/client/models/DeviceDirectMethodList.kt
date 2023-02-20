@@ -10,29 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param guid 
- * @param methodName 
- * @param requestJson 
- * @param responseJson 
- * @param status 
- * @param responseTimeoutSecond 
- * @param createdDate 
- * @param createBy 
- */
+ * *
+ * @param guid * @param methodName * @param requestJson * @param responseJson * @param status * @param responseTimeoutSecond * @param createdDate * @param createBy */
 
-
-data class DeviceDirectMethodList (
+data class DeviceDirectMethodList(
 
     @field:JsonProperty("guid")
     val guid: kotlin.String? = null,
@@ -56,7 +45,6 @@ data class DeviceDirectMethodList (
     val createdDate: java.time.OffsetDateTime? = null,
 
     @field:JsonProperty("createBy")
-    val createBy: kotlin.String? = null
+    val createBy: kotlin.String? = null,
 
 )
-

@@ -10,46 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-import com.thealvistar.iotconnect.device.client.models.ChildAttribute
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param guid 
- * @param localName 
- * @param description 
- * @param dataTypeGuid 
- * @param dataTypeName 
- * @param createdDate 
- * @param createdby 
- * @param updatedDate 
- * @param dataValidation 
- * @param unit 
- * @param tag 
- * @param sequence 
- * @param parentTemplateAttributeGuid 
- * @param isTemplateAttributeUsed 
- * @param isTagUsed 
- * @param aggregateType 
- * @param aggregateTypeCount 
- * @param tumblingWindow 
- * @param startIndex 
- * @param numChar 
- * @param attributes 
- * @param isPowerBIAttributeUsed 
- * @param attributeColor 
- * @param conditionBitValue 
- */
+ * *
+ * @param guid * @param localName * @param description * @param dataTypeGuid * @param dataTypeName * @param createdDate * @param createdby * @param updatedDate * @param dataValidation * @param unit * @param tag * @param sequence * @param parentTemplateAttributeGuid * @param isTemplateAttributeUsed * @param isTagUsed * @param aggregateType * @param aggregateTypeCount * @param tumblingWindow * @param startIndex * @param numChar * @param attributes * @param isPowerBIAttributeUsed * @param attributeColor * @param conditionBitValue */
 
-
-data class AttributeList (
+data class AttributeList(
 
     @field:JsonProperty("guid")
     val guid: kotlin.String? = null,
@@ -121,7 +93,6 @@ data class AttributeList (
     val attributeColor: kotlin.String? = null,
 
     @field:JsonProperty("conditionBitValue")
-    val conditionBitValue: kotlin.Int? = null
+    val conditionBitValue: kotlin.Int? = null,
 
 )
-

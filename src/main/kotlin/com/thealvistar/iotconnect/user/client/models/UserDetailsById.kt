@@ -10,50 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.user.client.models
 
-import com.thealvistar.iotconnect.user.client.models.UserinfoValues
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param userGuid 
- * @param userId 
- * @param companyGuid 
- * @param firstName 
- * @param lastName 
- * @param timezoneGuid 
- * @param imageName 
- * @param isActive 
- * @param roleName 
- * @param roleGuid 
- * @param contactNo 
- * @param entityName 
- * @param userInfo 
- * @param createdBy 
- * @param updatedBy 
- * @param updatedByName 
- * @param createdDate 
- * @param updatedDate 
- * @param entityGuid 
- * @param parentEntityGuid 
- * @param companyLogo 
- * @param companyName 
- * @param companyCpid 
- * @param timezoneOffset 
- * @param imageUrl 
- * @param companyLogoUrl 
- * @param dmsVersion 
- * @param isCompanyAdmin 
- */
+ * *
+ * @param userGuid * @param userId * @param companyGuid * @param firstName * @param lastName * @param timezoneGuid * @param imageName * @param isActive * @param roleName * @param roleGuid * @param contactNo * @param entityName * @param userInfo * @param createdBy * @param updatedBy * @param updatedByName * @param createdDate * @param updatedDate * @param entityGuid * @param parentEntityGuid * @param companyLogo * @param companyName * @param companyCpid * @param timezoneOffset * @param imageUrl * @param companyLogoUrl * @param dmsVersion * @param isCompanyAdmin */
 
-
-data class UserDetailsById (
+data class UserDetailsById(
 
     @field:JsonProperty("userGuid")
     val userGuid: kotlin.String? = null,
@@ -137,7 +105,6 @@ data class UserDetailsById (
     val dmsVersion: kotlin.String? = null,
 
     @field:JsonProperty("isCompanyAdmin")
-    val isCompanyAdmin: kotlin.Boolean? = null
+    val isCompanyAdmin: kotlin.Boolean? = null,
 
 )
-

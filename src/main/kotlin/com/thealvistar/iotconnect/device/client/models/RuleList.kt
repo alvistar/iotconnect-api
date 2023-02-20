@@ -10,39 +10,18 @@
     "ArrayInDataClass",
     "EnumEntryName",
     "RemoveRedundantQualifierName",
-    "UnusedImport"
+    "UnusedImport",
 )
 
 package com.thealvistar.iotconnect.device.client.models
 
-import com.thealvistar.iotconnect.device.client.models.OutputparamListResponse
-
 import com.fasterxml.jackson.annotation.JsonProperty
 
 /**
- * 
- *
- * @param guid 
- * @param name 
- * @param template 
- * @param entity 
- * @param ruleType 
- * @param conditionText 
- * @param userCount 
- * @param roleCount 
- * @param createdby 
- * @param updatedby 
- * @param createddate 
- * @param updateddate 
- * @param isActive 
- * @param snoozeTime 
- * @param isSolutionTemplate 
- * @param solutionName 
- * @param info 
- */
+ * *
+ * @param guid * @param name * @param template * @param entity * @param ruleType * @param conditionText * @param userCount * @param roleCount * @param createdby * @param updatedby * @param createddate * @param updateddate * @param isActive * @param snoozeTime * @param isSolutionTemplate * @param solutionName * @param info */
 
-
-data class RuleList (
+data class RuleList(
 
     @field:JsonProperty("guid")
     val guid: kotlin.String? = null,
@@ -93,7 +72,6 @@ data class RuleList (
     val solutionName: kotlin.String? = null,
 
     @field:JsonProperty("info")
-    val info: kotlin.collections.List<OutputparamListResponse>? = null
+    val info: kotlin.collections.List<OutputparamListResponse>? = null,
 
 )
-
