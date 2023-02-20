@@ -1,0 +1,53 @@
+
+# DeviceInformation
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**guid** | **kotlin.String** |  |  [optional] [readonly]
+**uniqueId** | **kotlin.String** |  |  [optional]
+**displayName** | **kotlin.String** |  |  [optional]
+**isConnected** | **kotlin.Boolean** |  |  [optional]
+**lastActivityDate** | [**java.time.OffsetDateTime**](java.time.OffsetDateTime.md) |  |  [optional]
+**isActive** | **kotlin.Boolean** |  |  [optional]
+**firmwareUpgradeGuid** | **kotlin.String** |  |  [optional] [readonly]
+**deviceTemplateGuid** | **kotlin.String** |  |  [optional] [readonly]
+**entityGuid** | **kotlin.String** |  |  [optional] [readonly]
+**certificateGuid** | **kotlin.String** |  |  [optional] [readonly]
+**certificateName** | **kotlin.String** |  |  [optional]
+**certificateType** | **kotlin.Int** |  |  [optional]
+**deviceTemplateAuthType** | **kotlin.Int** |  |  [optional]
+**entityName** | **kotlin.String** |  |  [optional]
+**deviceTemplateName** | **kotlin.String** |  |  [optional]
+**note** | **kotlin.String** |  |  [optional]
+**image** | **kotlin.String** |  |  [optional]
+**cpId** | **kotlin.String** |  |  [optional]
+**isAcquired** | **kotlin.Int** |  |  [optional]
+**firmwareAvail** | **kotlin.Int** |  |  [optional]
+**parentDeviceGuid** | **kotlin.String** |  |  [optional] [readonly]
+**tag** | **kotlin.String** |  |  [optional]
+**parentDeviceUniqueId** | **kotlin.String** |  |  [optional]
+**isParentAcquired** | **kotlin.Int** |  |  [optional]
+**isSimulatorOn** | **kotlin.Int** |  |  [optional]
+**isType2Support** | **kotlin.Boolean** |  |  [optional]
+**isEdgeSupport** | **kotlin.Boolean** |  |  [optional]
+**isAllottedDevice** | **kotlin.Int** |  |  [optional]
+**allottedDevicePermission** | **kotlin.collections.Map&lt;kotlin.String, kotlin.Boolean&gt;** |  |  [optional]
+**imageUrl** | **kotlin.String** |  |  [optional] [readonly]
+**properties** | [**kotlin.collections.List&lt;DeviceProperty&gt;**](DeviceProperty.md) |  |  [optional]
+**deviceStatus** | **kotlin.String** |  |  [optional]
+**isLowBandwidth** | **kotlin.Boolean** |  |  [optional]
+**isIotEdgeEnable** | **kotlin.Boolean** |  |  [optional]
+**isSolutionTemplate** | **kotlin.Boolean** |  |  [optional]
+**fileSupport** | **kotlin.Boolean** |  |  [optional]
+**msgCode** | **kotlin.String** |  |  [optional] [readonly]
+**messageVersion** | **kotlin.String** |  |  [optional]
+**hasTwin** | **kotlin.Boolean** |  |  [optional]
+**hasDirectMethod** | **kotlin.Boolean** |  |  [optional]
+**parentCompanyGuid** | [**java.util.UUID**](java.util.UUID.md) |  |  [optional]
+**companyGuid** | **kotlin.String** |  |  [optional] [readonly]
+**lastConnection** | [**java.time.OffsetDateTime**](java.time.OffsetDateTime.md) |  |  [optional]
+**isDpsDevice** | **kotlin.Boolean** |  |  [optional] [readonly]
+
+
+

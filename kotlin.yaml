@@ -1,0 +1,8 @@
+inputSpec: https://avnetdevice.iotconnect.io/swagger/v2/swagger.json
+generatorName: kotlin
+library: jvm-retrofit2
+serializationLibrary: jackson
+artifactId: iotconnect-device-api
+groupId: com.thealvistar
+packageName: com.thealvistar.iotconnect.device.client
+

@@ -1,0 +1,10 @@
+inputSpec: https://avnetdevice.iotconnect.io/swagger/v2/swagger.json
+generatorName: java
+library: webclient
+artifactId: iotconnect-device-api
+groupId: com.thealvistar
+apiPackage: com.thealvistar.iotconnect.device.api
+developerEmail: alvistar@gmail.com
+developerName: Alessandro Viganò
+modelPackage: com.thealvistar.iotconnect.device.model
+
