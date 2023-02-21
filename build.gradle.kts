@@ -25,6 +25,9 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-jackson:$retrofitVersion")
     implementation("io.github.microutils:kotlin-logging-jvm:3.0.4")
     testImplementation("org.junit.jupiter:junit-jupiter:5.8.1")
+    testImplementation("com.github.tomakehurst:wiremock-jre8:2.35.0")
+    testImplementation("com.marcinziolo:kotlin-wiremock:2.0.1")
+    testImplementation("org.slf4j:slf4j-simple:2.0.6")
 }
 
 tasks.withType<KotlinCompile> {
