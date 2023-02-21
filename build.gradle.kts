@@ -28,6 +28,8 @@ dependencies {
     testImplementation("com.github.tomakehurst:wiremock-jre8:2.35.0")
     testImplementation("com.marcinziolo:kotlin-wiremock:2.0.1")
     testImplementation("org.slf4j:slf4j-simple:2.0.6")
+    testImplementation("io.github.cdimascio:dotenv-kotlin:6.4.1")
+    testImplementation("io.kotest:kotest-assertions-core:5.5.4")
 }
 
 tasks.withType<KotlinCompile> {
